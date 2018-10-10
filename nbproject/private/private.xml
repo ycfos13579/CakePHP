@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/cakeTp1%20-%20V3/src/Template/Customers/index.ctp</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/cakeTp1%20-%20V3/src/Controller/CustomersController.php</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/cakeTp1%20-%20V3/src/Locale/ar/default.po</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/cakeTp1%20-%20V3/src/Template/Layout/default.ctp</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/cakeTp1%20-%20V3/config/Migrations/20181010231224_Initial.php</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/cakeTp1%20-%20V3/src/Controller/EmployesController.php</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/cakeTp1%20-%20V3/src/Controller/ErrorController.php</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/cakeTp1%20-%20V3/config/bootstrap.php</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/cakeTp1%20-%20V3/src/Template/Emails/index.ctp</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/cakeTp1%20-%20V3/src/Template/Employes/view.ctp</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/cakeTp1%20-%20V3/src/Controller/AddressesController.php</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/cakeTp1%20-%20V3/src/Template/Employes/index.ctp</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/cakeTp1%20-%20V3/src/Controller/AppController.php</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/cakeTp1%20-%20V3/src/Model/Table/EmployesTable.php</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/cakeTp1%20-%20V3/config/Seeds/AddressesSeed.php</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/cakeTp1%20-%20V3/src/Controller/PagesController.php</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/cakeTp1%20-%20V3/src/Controller/TagsController.php</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/cakeTp1%20-%20V3/config/app.php</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/cakeTp1%20-%20V3/src/Locale/default.pot</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/cakeTp1%20-%20V3/src/Controller/EmailsController.php</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/cakeTp1%20-%20V3/src/Template/Employes/add.ctp</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/cakeTp1%20-%20V3/src/Controller/FilesController.php</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/cakeTp1%20-%20V3/src/Model/Entity/Employe.php</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/cakeTp1%20-%20V3/src/Template/Employes/edit.ctp</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/cakeTp1%20-%20V3/src/Controller/UsersController.php</file>
+        </group>
+    </open-files>
+</project-private>

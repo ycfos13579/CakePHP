@@ -1,0 +1,310 @@
+2018-09-24 13:55:15 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cakebanque.models' doesn't exist in C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 131
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'models', Array, Object(Cake\Database\Schema\TableSchema))
+#1 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('models', Array)
+#2 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\cakephp\src\ORM\Table.php(548): Cake\Database\Schema\CachedCollection->describe('models')
+#3 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\cakephp\src\ORM\Table.php(673): Cake\ORM\Table->getSchema()
+#4 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(220): Cake\ORM\Table->getPrimaryKey()
+#5 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(130): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(113): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'models', 'Models')
+#7 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(100): Bake\Shell\Task\ModelTask->bake('Models')
+#8 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\bake\src\Shell\BakeShell.php(273): Bake\Shell\Task\ModelTask->main('Models')
+#9 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('models', 0)
+#10 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\bake\src\Shell\BakeShell.php(274): Cake\Collection\Collection->each(Object(Closure))
+#11 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\cakephp\src\Console\Shell.php(518): Bake\Shell\BakeShell->all('models')
+#12 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Cake\Console\Shell->runCommand(Array, true)
+#13 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#14 C:\Program Files (x86)\Ampps\www\cakeTp1\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#15 {main}
+
+
+2018-09-24 13:55:31 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cakebanque.controllers' doesn't exist in C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 131
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'controllers', Array, Object(Cake\Database\Schema\TableSchema))
+#1 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('controllers', Array)
+#2 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\cakephp\src\ORM\Table.php(548): Cake\Database\Schema\CachedCollection->describe('controllers')
+#3 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\cakephp\src\ORM\Table.php(673): Cake\ORM\Table->getSchema()
+#4 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(220): Cake\ORM\Table->getPrimaryKey()
+#5 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(130): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(113): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'controllers', 'Controllers')
+#7 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(100): Bake\Shell\Task\ModelTask->bake('Controllers')
+#8 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\bake\src\Shell\BakeShell.php(273): Bake\Shell\Task\ModelTask->main('Controllers')
+#9 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('controllers', 0)
+#10 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\bake\src\Shell\BakeShell.php(274): Cake\Collection\Collection->each(Object(Closure))
+#11 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\cakephp\src\Console\Shell.php(518): Bake\Shell\BakeShell->all('controllers')
+#12 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Cake\Console\Shell->runCommand(Array, true)
+#13 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#14 C:\Program Files (x86)\Ampps\www\cakeTp1\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#15 {main}
+
+
+2018-09-24 13:55:37 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cakebanque.views' doesn't exist in C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 131
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'views', Array, Object(Cake\Database\Schema\TableSchema))
+#1 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('views', Array)
+#2 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\cakephp\src\ORM\Table.php(548): Cake\Database\Schema\CachedCollection->describe('views')
+#3 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\cakephp\src\ORM\Table.php(673): Cake\ORM\Table->getSchema()
+#4 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(220): Cake\ORM\Table->getPrimaryKey()
+#5 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(130): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(113): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'views', 'Views')
+#7 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(100): Bake\Shell\Task\ModelTask->bake('Views')
+#8 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\bake\src\Shell\BakeShell.php(273): Bake\Shell\Task\ModelTask->main('Views')
+#9 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('views', 0)
+#10 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\bake\src\Shell\BakeShell.php(274): Cake\Collection\Collection->each(Object(Closure))
+#11 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\cakephp\src\Console\Shell.php(518): Bake\Shell\BakeShell->all('views')
+#12 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Cake\Console\Shell->runCommand(Array, true)
+#13 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#14 C:\Program Files (x86)\Ampps\www\cakeTp1\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#15 {main}
+
+
+2018-09-24 13:56:03 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cakebanque.templates' doesn't exist in C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 131
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'templates', Array, Object(Cake\Database\Schema\TableSchema))
+#1 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('templates', Array)
+#2 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\cakephp\src\ORM\Table.php(548): Cake\Database\Schema\CachedCollection->describe('templates')
+#3 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\cakephp\src\ORM\Table.php(673): Cake\ORM\Table->getSchema()
+#4 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(220): Cake\ORM\Table->getPrimaryKey()
+#5 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(130): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(113): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'templates', 'Templates')
+#7 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(100): Bake\Shell\Task\ModelTask->bake('Templates')
+#8 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\bake\src\Shell\BakeShell.php(273): Bake\Shell\Task\ModelTask->main('Templates')
+#9 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('templates', 0)
+#10 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\bake\src\Shell\BakeShell.php(274): Cake\Collection\Collection->each(Object(Closure))
+#11 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\cakephp\src\Console\Shell.php(518): Bake\Shell\BakeShell->all('templates')
+#12 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Cake\Console\Shell->runCommand(Array, true)
+#13 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#14 C:\Program Files (x86)\Ampps\www\cakeTp1\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#15 {main}
+
+
+2018-09-24 14:13:23 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cakebanque.catss' doesn't exist in C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 131
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'catss', Array, Object(Cake\Database\Schema\TableSchema))
+#1 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('catss', Array)
+#2 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\cakephp\src\ORM\Table.php(548): Cake\Database\Schema\CachedCollection->describe('catss')
+#3 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\cakephp\src\ORM\Table.php(673): Cake\ORM\Table->getSchema()
+#4 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(220): Cake\ORM\Table->getPrimaryKey()
+#5 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(130): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(113): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'catss', 'Catss')
+#7 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(100): Bake\Shell\Task\ModelTask->bake('Catss')
+#8 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\bake\src\Shell\BakeShell.php(273): Bake\Shell\Task\ModelTask->main('Catss')
+#9 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('catss', 0)
+#10 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\bake\src\Shell\BakeShell.php(274): Cake\Collection\Collection->each(Object(Closure))
+#11 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\cakephp\src\Console\Shell.php(518): Bake\Shell\BakeShell->all('catss')
+#12 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Cake\Console\Shell->runCommand(Array, true)
+#13 C:\Program Files (x86)\Ampps\www\cakeTp1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#14 C:\Program Files (x86)\Ampps\www\cakeTp1\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#15 {main}
+
+
+2018-10-09 20:44:16 Error: [RuntimeException] Failed to write cache file "C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\tmp\cache\twigView/80/8089a0b202e8ffc8d7841a47c37b20006c57e670f11e211689ce5ccfbc17dfab.php". in C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\twig\twig\lib\Twig\Cache\Filesystem.php on line 80
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\twig\twig\lib\Twig\Environment.php(457): Twig_Cache_Filesystem->write('C:\\Program File...', '<?php\n\n/* C:\\Pr...')
+#1 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\wyrihaximus\twig-view\src\View\TwigView.php(180): Twig_Environment->loadTemplate('C:\\Program File...')
+#2 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\bake\src\View\BakeView.php(146): WyriHaximus\TwigView\View\TwigView->_render('C:\\Program File...')
+#3 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\bake\src\Shell\Task\BakeTemplateTask.php(91): Bake\View\BakeView->render('Model/table')
+#4 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(956): Bake\Shell\Task\BakeTemplateTask->generate('Model/table')
+#5 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(114): Bake\Shell\Task\ModelTask->bakeTable(Object(Cake\ORM\Table), Array)
+#6 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(100): Bake\Shell\Task\ModelTask->bake('Employes')
+#7 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\bake\src\Shell\BakeShell.php(273): Bake\Shell\Task\ModelTask->main('Employes')
+#8 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('employes', 0)
+#9 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\bake\src\Shell\BakeShell.php(274): Cake\Collection\Collection->each(Object(Closure))
+#10 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Console\Shell.php(518): Bake\Shell\BakeShell->all('employes')
+#11 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Cake\Console\Shell->runCommand(Array, true)
+#12 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#13 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#14 {main}
+
+
+2018-10-09 20:46:56 Error: [RuntimeException] Failed to write cache file "C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\tmp\cache\twigView/80/8089a0b202e8ffc8d7841a47c37b20006c57e670f11e211689ce5ccfbc17dfab.php". in C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\twig\twig\lib\Twig\Cache\Filesystem.php on line 80
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\twig\twig\lib\Twig\Environment.php(457): Twig_Cache_Filesystem->write('C:\\Program File...', '<?php\n\n/* C:\\Pr...')
+#1 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\wyrihaximus\twig-view\src\View\TwigView.php(180): Twig_Environment->loadTemplate('C:\\Program File...')
+#2 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\bake\src\View\BakeView.php(146): WyriHaximus\TwigView\View\TwigView->_render('C:\\Program File...')
+#3 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\bake\src\Shell\Task\BakeTemplateTask.php(91): Bake\View\BakeView->render('Model/table')
+#4 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(956): Bake\Shell\Task\BakeTemplateTask->generate('Model/table')
+#5 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(114): Bake\Shell\Task\ModelTask->bakeTable(Object(Cake\ORM\Table), Array)
+#6 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(100): Bake\Shell\Task\ModelTask->bake('Employes')
+#7 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Console\Shell.php(532): Bake\Shell\Task\ModelTask->main('employes')
+#8 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Console\Shell.php(525): Cake\Console\Shell->runCommand(Array, false, Array)
+#9 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Cake\Console\Shell->runCommand(Array, true)
+#10 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#11 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#12 {main}
+
+
+2018-10-09 20:48:30 Error: [RuntimeException] Failed to write cache file "C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\tmp\cache\twigView/80/8089a0b202e8ffc8d7841a47c37b20006c57e670f11e211689ce5ccfbc17dfab.php". in C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\twig\twig\lib\Twig\Cache\Filesystem.php on line 80
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\twig\twig\lib\Twig\Environment.php(457): Twig_Cache_Filesystem->write('C:\\Program File...', '<?php\n\n/* C:\\Pr...')
+#1 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\wyrihaximus\twig-view\src\View\TwigView.php(180): Twig_Environment->loadTemplate('C:\\Program File...')
+#2 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\bake\src\View\BakeView.php(146): WyriHaximus\TwigView\View\TwigView->_render('C:\\Program File...')
+#3 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\bake\src\Shell\Task\BakeTemplateTask.php(91): Bake\View\BakeView->render('Model/table')
+#4 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(956): Bake\Shell\Task\BakeTemplateTask->generate('Model/table')
+#5 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(114): Bake\Shell\Task\ModelTask->bakeTable(Object(Cake\ORM\Table), Array)
+#6 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(100): Bake\Shell\Task\ModelTask->bake('Employes')
+#7 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Console\Shell.php(532): Bake\Shell\Task\ModelTask->main('employes')
+#8 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Console\Shell.php(525): Cake\Console\Shell->runCommand(Array, false, Array)
+#9 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Cake\Console\Shell->runCommand(Array, true)
+#10 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#11 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#12 {main}
+
+
+2018-10-09 20:49:03 Error: [RuntimeException] Failed to write cache file "C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\tmp\cache\twigView/80/8089a0b202e8ffc8d7841a47c37b20006c57e670f11e211689ce5ccfbc17dfab.php". in C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\twig\twig\lib\Twig\Cache\Filesystem.php on line 80
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\twig\twig\lib\Twig\Environment.php(457): Twig_Cache_Filesystem->write('C:\\Program File...', '<?php\n\n/* C:\\Pr...')
+#1 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\wyrihaximus\twig-view\src\View\TwigView.php(180): Twig_Environment->loadTemplate('C:\\Program File...')
+#2 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\bake\src\View\BakeView.php(146): WyriHaximus\TwigView\View\TwigView->_render('C:\\Program File...')
+#3 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\bake\src\Shell\Task\BakeTemplateTask.php(91): Bake\View\BakeView->render('Model/table')
+#4 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(956): Bake\Shell\Task\BakeTemplateTask->generate('Model/table')
+#5 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(114): Bake\Shell\Task\ModelTask->bakeTable(Object(Cake\ORM\Table), Array)
+#6 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(100): Bake\Shell\Task\ModelTask->bake('Employes')
+#7 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\bake\src\Shell\BakeShell.php(273): Bake\Shell\Task\ModelTask->main('Employes')
+#8 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('employes', 0)
+#9 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\bake\src\Shell\BakeShell.php(274): Cake\Collection\Collection->each(Object(Closure))
+#10 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Console\Shell.php(518): Bake\Shell\BakeShell->all('employes')
+#11 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Cake\Console\Shell->runCommand(Array, true)
+#12 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#13 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#14 {main}
+
+
+2018-10-09 20:51:41 Error: [RuntimeException] Failed to write cache file "C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\tmp\cache\twigView/80/8089a0b202e8ffc8d7841a47c37b20006c57e670f11e211689ce5ccfbc17dfab.php". in C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\twig\twig\lib\Twig\Cache\Filesystem.php on line 80
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\twig\twig\lib\Twig\Environment.php(457): Twig_Cache_Filesystem->write('C:\\Program File...', '<?php\n\n/* C:\\Pr...')
+#1 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\wyrihaximus\twig-view\src\View\TwigView.php(180): Twig_Environment->loadTemplate('C:\\Program File...')
+#2 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\bake\src\View\BakeView.php(146): WyriHaximus\TwigView\View\TwigView->_render('C:\\Program File...')
+#3 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\bake\src\Shell\Task\BakeTemplateTask.php(91): Bake\View\BakeView->render('Model/table')
+#4 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(956): Bake\Shell\Task\BakeTemplateTask->generate('Model/table')
+#5 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(114): Bake\Shell\Task\ModelTask->bakeTable(Object(Cake\ORM\Table), Array)
+#6 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(100): Bake\Shell\Task\ModelTask->bake('Employes')
+#7 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Console\Shell.php(532): Bake\Shell\Task\ModelTask->main('employes')
+#8 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Console\Shell.php(525): Cake\Console\Shell->runCommand(Array, false, Array)
+#9 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Cake\Console\Shell->runCommand(Array, true)
+#10 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#11 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#12 {main}
+
+
+2018-10-09 20:56:41 Error: [RuntimeException] Failed to write cache file "C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\tmp\cache\twigView/80/8089a0b202e8ffc8d7841a47c37b20006c57e670f11e211689ce5ccfbc17dfab.php". in C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\twig\twig\lib\Twig\Cache\Filesystem.php on line 80
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\twig\twig\lib\Twig\Environment.php(457): Twig_Cache_Filesystem->write('C:\\Program File...', '<?php\n\n/* C:\\Pr...')
+#1 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\wyrihaximus\twig-view\src\View\TwigView.php(180): Twig_Environment->loadTemplate('C:\\Program File...')
+#2 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\bake\src\View\BakeView.php(146): WyriHaximus\TwigView\View\TwigView->_render('C:\\Program File...')
+#3 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\bake\src\Shell\Task\BakeTemplateTask.php(91): Bake\View\BakeView->render('Model/table')
+#4 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(956): Bake\Shell\Task\BakeTemplateTask->generate('Model/table')
+#5 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(114): Bake\Shell\Task\ModelTask->bakeTable(Object(Cake\ORM\Table), Array)
+#6 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(100): Bake\Shell\Task\ModelTask->bake('Employes')
+#7 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\bake\src\Shell\BakeShell.php(273): Bake\Shell\Task\ModelTask->main('Employes')
+#8 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('employes', 0)
+#9 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\bake\src\Shell\BakeShell.php(274): Cake\Collection\Collection->each(Object(Closure))
+#10 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Console\Shell.php(518): Bake\Shell\BakeShell->all('employes')
+#11 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Cake\Console\Shell->runCommand(Array, true)
+#12 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#13 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#14 {main}
+
+
+2018-10-09 20:59:04 Error: [RuntimeException] Failed to write cache file "C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\tmp\cache\twigView/e9/e9c771e800bb8d44aebc838b1f46713bc21d1639ebb02b089c98c3ac30a8f17f.php". in C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\twig\twig\lib\Twig\Cache\Filesystem.php on line 80
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\twig\twig\lib\Twig\Environment.php(457): Twig_Cache_Filesystem->write('C:\\Program File...', '<?php\n\n/* C:\\Pr...')
+#1 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\wyrihaximus\twig-view\src\View\TwigView.php(180): Twig_Environment->loadTemplate('C:\\Program File...')
+#2 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\bake\src\View\BakeView.php(146): WyriHaximus\TwigView\View\TwigView->_render('C:\\Program File...')
+#3 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\bake\src\Shell\Task\BakeTemplateTask.php(91): Bake\View\BakeView->render('Template/index')
+#4 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\bake\src\Shell\Task\TemplateTask.php(386): Bake\Shell\Task\BakeTemplateTask->generate('Template/index')
+#5 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\bake\src\Shell\Task\TemplateTask.php(146): Bake\Shell\Task\TemplateTask->getContent('index', Array)
+#6 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Console\Shell.php(532): Bake\Shell\Task\TemplateTask->main('employes')
+#7 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Console\Shell.php(525): Cake\Console\Shell->runCommand(Array, false, Array)
+#8 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Cake\Console\Shell->runCommand(Array, true)
+#9 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#10 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#11 {main}
+
+
+2018-10-09 20:59:15 Error: [RuntimeException] Failed to write cache file "C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\tmp\cache\twigView/80/8089a0b202e8ffc8d7841a47c37b20006c57e670f11e211689ce5ccfbc17dfab.php". in C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\twig\twig\lib\Twig\Cache\Filesystem.php on line 80
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\twig\twig\lib\Twig\Environment.php(457): Twig_Cache_Filesystem->write('C:\\Program File...', '<?php\n\n/* C:\\Pr...')
+#1 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\wyrihaximus\twig-view\src\View\TwigView.php(180): Twig_Environment->loadTemplate('C:\\Program File...')
+#2 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\bake\src\View\BakeView.php(146): WyriHaximus\TwigView\View\TwigView->_render('C:\\Program File...')
+#3 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\bake\src\Shell\Task\BakeTemplateTask.php(91): Bake\View\BakeView->render('Model/table')
+#4 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(956): Bake\Shell\Task\BakeTemplateTask->generate('Model/table')
+#5 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(114): Bake\Shell\Task\ModelTask->bakeTable(Object(Cake\ORM\Table), Array)
+#6 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(100): Bake\Shell\Task\ModelTask->bake('Employes')
+#7 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Console\Shell.php(532): Bake\Shell\Task\ModelTask->main('employes')
+#8 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Console\Shell.php(525): Cake\Console\Shell->runCommand(Array, false, Array)
+#9 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Cake\Console\Shell->runCommand(Array, true)
+#10 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#11 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#12 {main}
+
+
+2018-10-10 23:27:59 Error: [InvalidArgumentException] An invalid column type "tinyinteger" was specified for column "published". in C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\robmorgan\phinx\src\Phinx\Db\Table.php on line 263
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\migrations\src\Table.php(57): Phinx\Db\Table->addColumn('published', 'tinyinteger', Array)
+#1 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\config\Migrations\20181010231224_Initial.php(31): Migrations\Table->addColumn('published', 'tinyinteger', Array)
+#2 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(128): Initial->up()
+#3 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(387): Phinx\Migration\Manager\Environment->executeMigration(Object(Initial), 'up', false)
+#4 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(361): Phinx\Migration\Manager->executeMigration('default', Object(Initial), 'up', false)
+#5 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\robmorgan\phinx\src\Phinx\Console\Command\Migrate.php(121): Phinx\Migration\Manager->migrate('default', '20181010231224', false)
+#6 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\migrations\src\Command\Migrate.php(67): Migrations\Command\Migrate->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\symfony\console\Command\Command.php(251): Migrations\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\symfony\console\Application.php(886): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\symfony\console\Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Migrate), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\symfony\console\Application.php(145): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(108): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Console\Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'migrate')
+#14 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(164): Cake\Console\Shell->runCommand(Array, true, Array)
+#15 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#16 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#17 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#18 {main}
+
+
+2018-10-10 23:35:33 Error: [InvalidArgumentException] An invalid column type "tinyinteger" was specified for column "published". in C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\robmorgan\phinx\src\Phinx\Db\Table.php on line 263
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\migrations\src\Table.php(57): Phinx\Db\Table->addColumn('published', 'tinyinteger', Array)
+#1 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\config\Migrations\20181010231224_Initial.php(31): Migrations\Table->addColumn('published', 'tinyinteger', Array)
+#2 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(128): Initial->up()
+#3 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(387): Phinx\Migration\Manager\Environment->executeMigration(Object(Initial), 'up', false)
+#4 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(361): Phinx\Migration\Manager->executeMigration('default', Object(Initial), 'up', false)
+#5 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\robmorgan\phinx\src\Phinx\Console\Command\Migrate.php(121): Phinx\Migration\Manager->migrate('default', '20181010231224', false)
+#6 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\migrations\src\Command\Migrate.php(67): Migrations\Command\Migrate->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\symfony\console\Command\Command.php(251): Migrations\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\symfony\console\Application.php(886): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\symfony\console\Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Migrate), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\symfony\console\Application.php(145): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(108): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Console\Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'migrate')
+#14 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(164): Cake\Console\Shell->runCommand(Array, true, Array)
+#15 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#16 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#17 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#18 {main}
+
+
+2018-10-10 23:36:59 Error: [InvalidArgumentException] An invalid column type "tinyinteger" was specified for column "published". in C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\robmorgan\phinx\src\Phinx\Db\Table.php on line 263
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\migrations\src\Table.php(57): Phinx\Db\Table->addColumn('published', 'tinyinteger', Array)
+#1 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\config\Migrations\20181010231224_Initial.php(31): Migrations\Table->addColumn('published', 'tinyinteger', Array)
+#2 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(128): Initial->up()
+#3 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(387): Phinx\Migration\Manager\Environment->executeMigration(Object(Initial), 'up', false)
+#4 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(361): Phinx\Migration\Manager->executeMigration('default', Object(Initial), 'up', false)
+#5 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\robmorgan\phinx\src\Phinx\Console\Command\Migrate.php(121): Phinx\Migration\Manager->migrate('default', '20181010231224', false)
+#6 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\migrations\src\Command\Migrate.php(67): Migrations\Command\Migrate->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\symfony\console\Command\Command.php(251): Migrations\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\symfony\console\Application.php(886): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\symfony\console\Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Migrate), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\symfony\console\Application.php(145): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(108): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Console\Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'migrate')
+#14 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(164): Cake\Console\Shell->runCommand(Array, true, Array)
+#15 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#16 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#17 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#18 {main}
+
+
