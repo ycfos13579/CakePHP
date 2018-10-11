@@ -21,7 +21,7 @@
         <li><?= $this->Html->link(__('New File'), ['controller' => 'Files', 'action' => 'add']) ?></li>
     </ul>
 </nav>
-<div class="articles view large-9 medium-8 columns content">
+<div class="addresses view large-9 medium-8 columns content">
     <h3><?= h($address->title) ?></h3>
     <table class="vertical-table">
         <tr>
@@ -107,28 +107,28 @@
     </div>    
     <div class="related">
         <h4><?= __('Related Customers') ?></h4>
-<?php if (!empty($address->comments)): ?>
+<?php if (!empty($address->customers)): ?>
             <table cellpadding="0" cellspacing="0">
                 <tr>
                     <th scope="col"><?= __('Id') ?></th>
-                    <th scope="col"><?= __('Address Id') ?></th>
+                    <th scope="col"><?= __('Address_Id') ?></th>
                     <th scope="col"><?= __('Name') ?></th>
                     <th scope="col"><?= __('Customer') ?></th>
                     <th scope="col"><?= __('Created') ?></th>
                     <th scope="col"><?= __('Modified') ?></th>
                     <th scope="col" class="actions"><?= __('Actions') ?></th>
                 </tr>
-    <?php foreach ($article->customers as $customers): ?>
+    <?php foreach ($address->customers as $customers): ?>
                     <tr>
                         <td><?= h($customers->id) ?></td>
-                        <td><?= h($customers->article_id) ?></td>
+                        <td><?= h($customers->address_id) ?></td>
                         <td><?= h($customers->name) ?></td>
-                        <td><?= h($customers->comment) ?></td>
+                        <td><?= h($customers->customer) ?></td>
                         <td><?= h($customers->created) ?></td>
                         <td><?= h($customers->modified) ?></td>
                         <td class="actions">
-                            <?= $this->Html->link(__('View'), ['controller' => 'Comments', 'action' => 'view', $customers->id]) ?>
-                            <?= $this->Html->link(__('Edit'), ['controller' => 'Comments', 'action' => 'edit', $customers->id]) ?>
+                            <?= $this->Html->link(__('View'), ['controller' => 'Customers', 'action' => 'view', $customers->id]) ?>
+                            <?= $this->Html->link(__('Edit'), ['controller' => 'Customers', 'action' => 'edit', $customers->id]) ?>
         <?= $this->Form->postLink(__('Delete'), ['controller' => 'Customers', 'action' => 'delete', $customers->id], ['confirm' => __('Are you sure you want to delete # {0}?', $customers->id)]) ?>
                         </td>
                     </tr>
