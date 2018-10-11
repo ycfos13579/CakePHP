@@ -22,6 +22,12 @@ class TagsController extends AppController {
             }
             return true;
         }
+        if (isset($user['role']) && $user['role'] === 'toBeEmploye') {
+            if(in_array($action, ['add', 'view', 'edit'])){
+                return true;
+            }
+            return true;
+        }
         // All actions are allowed to logged in users for tags.
        // return true;
     }

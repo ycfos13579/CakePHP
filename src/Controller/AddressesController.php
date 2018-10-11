@@ -22,6 +22,12 @@ class AddressesController extends AppController
             }
             return true;
         }
+        if (isset($user['role']) && $user['role'] === 'toBeEmploye') {
+            if(in_array($action, ['add', 'view', 'edit'])){
+                return true;
+            }
+            return true;
+        }
         /*$action = $this->request->getParam('action');
         // The add and tags actions are always allowed to logged in users.
         if (in_array($action, ['add', 'tags'])) {

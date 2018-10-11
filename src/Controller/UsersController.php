@@ -195,5 +195,23 @@ class UsersController extends AppController
         }
         $this->Flash->error(__('The employe could not be added. Please, try again.'));
     }
+    public function isAuthorized($user) {
+        parent::isAuthorized($user);
+        $action = $this->request->getParam('action');
+        if (isset($user['role']) && $user['role'] === 'admin') {
+            if(in_array($action, ['add', 'view', 'edit', 'delete'])){
+                return true;
+            }
+            return true;
+        }
+        if (isset($user['role']) && $user['role'] === 'toBeEmploye') {
+            if(in_array($action, ['add','view', 'edit'])){
+                return true;
+            }
+            return true;
+        }
+        // All actions are allowed to logged in users for tags.
+       // return true;
+    }
    
 }
