@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net
 --
 -- Client :  localhost
--- Généré le :  Mer 10 Octobre 2018 à 23:46
+-- Généré le :  Jeu 11 Octobre 2018 à 16:56
 -- Version du serveur :  5.6.37
 -- Version de PHP :  7.1.8
 
@@ -86,9 +86,15 @@ CREATE TABLE IF NOT EXISTS `customers` (
   `name` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `customer` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `created` datetime NOT NULL,
-  `modified` datetime NOT NULL,
-  `user_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `modified` datetime NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+
+--
+-- Contenu de la table `customers`
+--
+
+INSERT INTO `customers` (`id`, `address_id`, `name`, `customer`, `created`, `modified`) VALUES
+(4, 8, 'Oussama Youcef Bokari', '1235fgfdg', '2018-10-11 13:13:35', '2018-10-11 13:13:35');
 
 -- --------------------------------------------------------
 
@@ -105,9 +111,15 @@ CREATE TABLE IF NOT EXISTS `employes` (
   `province` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `postal_code` char(6) COLLATE utf8_unicode_ci NOT NULL,
   `region` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `active` tinyint(1) NOT NULL DEFAULT '1',
   `additional_informations` text COLLATE utf8_unicode_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Contenu de la table `employes`
+--
+
+INSERT INTO `employes` (`id`, `user_id`, `name`, `adress`, `city`, `province`, `postal_code`, `region`, `additional_informations`) VALUES
+(1, 33, 'michel shrerer', '', 'Laval', 'Québec', 'H7M 2Y', 'rive nord', 'il est malade mentalement le pauvre');
 
 -- --------------------------------------------------------
 
@@ -122,14 +134,15 @@ CREATE TABLE IF NOT EXISTS `files` (
   `created` datetime NOT NULL,
   `modified` datetime NOT NULL,
   `status` tinyint(1) NOT NULL DEFAULT '1'
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 
 --
 -- Contenu de la table `files`
 --
 
 INSERT INTO `files` (`id`, `name`, `path`, `created`, `modified`, `status`) VALUES
-(1, 'Béjaia.jpg', 'Files/', '2018-10-08 23:46:13', '2018-10-08 23:46:13', 1);
+(1, 'Béjaia.jpg', 'Files/', '2018-10-08 23:46:13', '2018-10-08 23:46:13', 1),
+(2, 'youc.png', 'Files/', '2018-10-11 13:35:01', '2018-10-11 13:35:01', 1);
 
 -- --------------------------------------------------------
 
@@ -185,7 +198,7 @@ CREATE TABLE IF NOT EXISTS `tags` (
   `title` varchar(191) CHARACTER SET utf8mb4 DEFAULT NULL,
   `created` datetime DEFAULT NULL,
   `modified` datetime DEFAULT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 
 --
 -- Contenu de la table `tags`
@@ -194,7 +207,8 @@ CREATE TABLE IF NOT EXISTS `tags` (
 INSERT INTO `tags` (`id`, `title`, `created`, `modified`) VALUES
 (1, 'premier tag', '2018-09-27 14:39:31', '2018-09-27 14:39:31'),
 (2, 'cvd', '2018-09-27 16:45:37', '2018-09-27 16:45:37'),
-(3, 'bmbm', '2018-10-07 17:18:40', '2018-10-07 17:18:40');
+(3, 'bmbm', '2018-10-07 17:18:40', '2018-10-07 17:18:40'),
+(4, 'deuxième tag', '2018-10-11 13:39:03', '2018-10-11 13:39:03');
 
 -- --------------------------------------------------------
 
@@ -209,7 +223,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `created` int(11) DEFAULT NULL,
   `modified` int(11) DEFAULT NULL,
   `role` varchar(40) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=34 DEFAULT CHARSET=latin1;
 
 --
 -- Contenu de la table `users`
@@ -221,7 +235,12 @@ INSERT INTO `users` (`id`, `email`, `password`, `created`, `modified`, `role`) V
 (20, 'cynt@bidon.com', '$2y$10$ef31Ud4bEAmKSE6bH4cZOuS4pSIYNUqm9pdpTQkt9xR7qRC/tioe6', 18, 18, 'toBeCustomer'),
 (21, 'camarche@gmail.com', '$2y$10$m.UL/Ur2BldPSaC473W.kucYjgbXx9w5.9jSky6csnN8z9BErrjQy', 18, 18, 'toBeCustomer'),
 (26, 'bobeponge@hotmail.dessin', '$2y$10$khjiKWDH9wgC.91mpbtI1uMr0yrcY5UKsJSQ2ZoTYdU.8agB/V3lu', 18, 18, 'toBeEmploye'),
-(28, 'grr@grr.com', '$2y$10$S1GbIEVdTU1u45kGsU9wLOeE/1oDVonl2Q8m87GBhJnuP9lY/WktK', 18, 10, 'toBeEmploye');
+(28, 'grr@grr.com', '$2y$10$S1GbIEVdTU1u45kGsU9wLOeE/1oDVonl2Q8m87GBhJnuP9lY/WktK', 18, 10, 'toBeEmploye'),
+(29, 'vlad@mich.com', '$2y$10$yzKNptrioGdBjYuoPFNX9e8xKk4f8IUn7VoZq9lM9aNBNOq6Bj5Nm', 10, 10, 'toBeEmploye'),
+(30, 'bar@bar.fr', '$2y$10$za7qCiHNtVU9g2pCK0BdlO6WLnmV8KSs4WiGwnFrJjt4XY06eXBda', 10, 10, 'toBeEmploye'),
+(31, 'bar@far.fr', '$2y$10$9qbf3VYdaIRzAtuuCukT5.iiBF/X5thMt1LLSOP4MTIKbSRBq6YTG', 10, 10, 'toBeCustomer'),
+(32, 'mich@outlook.fr', '$2y$10$z4wZnJjFdUoynbGvZJyvtuz7DZs0/TVFeh6AK5tU2gXKYQ06l2Z4G', 10, 10, 'toBeCustomer'),
+(33, 'pavel@hotmail.com', '$2y$10$Lp0IoQdZ8lDILbGi41lQF.9G6RDqS3rCF/oBBQ47cp7HhaJLM5FeK', 10, 10, 'employe');
 
 --
 -- Index pour les tables exportées
@@ -255,9 +274,7 @@ ALTER TABLE `addresses_tags`
 --
 ALTER TABLE `customers`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `address_id` (`address_id`) USING BTREE,
-  ADD KEY `index` (`user_id`),
-  ADD KEY `user_id` (`user_id`);
+  ADD KEY `address_id` (`address_id`) USING BTREE;
 
 --
 -- Index pour la table `employes`
@@ -317,17 +334,17 @@ ALTER TABLE `addresses_files`
 -- AUTO_INCREMENT pour la table `customers`
 --
 ALTER TABLE `customers`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT pour la table `employes`
 --
 ALTER TABLE `employes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT pour la table `files`
 --
 ALTER TABLE `files`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT pour la table `i18n`
 --
@@ -337,12 +354,12 @@ ALTER TABLE `i18n`
 -- AUTO_INCREMENT pour la table `tags`
 --
 ALTER TABLE `tags`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT pour la table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=29;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=34;
 --
 -- Contraintes pour les tables exportées
 --
@@ -371,8 +388,7 @@ ALTER TABLE `addresses_tags`
 -- Contraintes pour la table `customers`
 --
 ALTER TABLE `customers`
-  ADD CONSTRAINT `customers_ibfk_1` FOREIGN KEY (`address_id`) REFERENCES `addresses` (`id`),
-  ADD CONSTRAINT `customers_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`);
+  ADD CONSTRAINT `customers_ibfk_1` FOREIGN KEY (`address_id`) REFERENCES `addresses` (`id`);
 
 --
 -- Contraintes pour la table `employes`

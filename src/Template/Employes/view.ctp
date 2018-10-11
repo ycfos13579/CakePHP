@@ -54,10 +54,7 @@
             <th scope="row"><?= __('Id') ?></th>
             <td><?= $this->Number->format($employe->id) ?></td>
         </tr>
-        <tr>
-            <th scope="row"><?= __('Active') ?></th>
-            <td><?= $employe->active ? __('Yes') : __('No'); ?></td>
-        </tr>
+        
     </table>
     <div class="related">
         <h4><?= __('Related Addresses') ?></h4>

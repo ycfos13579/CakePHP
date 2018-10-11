@@ -16,7 +16,7 @@
     <h3><?= __('Employes') ?></h3>
     <?= 
     
-    $this->Html->link(__('New Employe'), ['controller' => 'Users', 'action' => 'add']) 
+    $this->Html->link(__('New Employe'), ['controller' => 'Employes', 'action' => 'add']) 
     ?>
     <table cellpadding="0" cellspacing="0">
         <thead>
@@ -29,7 +29,7 @@
                 <th scope="col"><?= $this->Paginator->sort('postal_code') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('region') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('additional_informations') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('active') ?></th>
+                
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
             </tr>
         </thead>
@@ -44,7 +44,7 @@
                 <td><?= h($employe->postal_code) ?></td>
                 <td><?= h($employe->region) ?></td>
                 <td><?= h($employe->additional_informations) ?></td>
-                <td><?= h($employe->active) ?></td>
+               
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['action' => 'view', $employe->id]) ?>
                     <?= $this->Html->link(__('Edit'), ['action' => 'edit', $employe->id]) ?>

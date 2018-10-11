@@ -123,8 +123,15 @@ class EmployesController extends AppController
     public function isAuthorized($user)
     {
         parent::isAuthorized($user);
-        /*
         $action = $this->request->getParam('action');
+        if (isset($user['role']) && $user['role'] === 'admin') {
+            if(in_array($action, ['add', 'view', 'edit', 'delete'])){
+                return true;
+            }
+            return true;
+        }
+        /*
+      
 
         $valide = false;
 

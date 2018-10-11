@@ -252,8 +252,8 @@ return [
     'Datasources' => [
         'default' => [
             'className' => 'Cake\Database\Connection',
-//            'driver' => 'Cake\Database\Driver\Mysql',
-            'driver' => 'Cake\Database\Driver\Sqlite',
+            'driver' => 'Cake\Database\Driver\Mysql',
+            //'driver' => 'Cake\Database\Driver\Sqlite',
             'persistent' => false,
             'host' => 'localhost',
             /*
@@ -261,16 +261,16 @@ return [
              * MySQL on MAMP uses port 8889, MAMP users will want to uncomment
              * the following line and set the port accordingly
              */
-            //'port' => 'non_standard_port_number',
-//            'username' => 'root',
-//            'password' => 'mysql',
-//            'database' => 'CakeBanque',
-              'database' => ROOT . DS . 'sqlite' . DS . 'default.sqlite',
+            'port' => 'non_standard_port_number',
+            'username' => 'root',
+            'password' => 'mysql',
+            'database' => 'CakeBanque',
+              //'database' => ROOT . DS . 'sqlite' . DS . 'default.sqlite',
 
             /*
              * You do not need to set this flag to use full utf-8 encoding (internal default since CakePHP 3.6).
              */
-            //'encoding' => 'utf8mb4',
+            'encoding' => 'utf8mb4',
             'timezone' => 'UTC',
             'flags' => [],
             'cacheMetadata' => true,

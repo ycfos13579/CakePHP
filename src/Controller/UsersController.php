@@ -180,5 +180,20 @@ class UsersController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
+     public function confirmEmploye($user_id = null){
+        $user = $this->Users->get($user_id);
+        $user->role = 'employe';
+    
+        if ($this->Users->save($user)) {
+            $this->Flash->success(__('The employe has been added.'));
+            $loguser = $this->request->getSession()->read('Auth.User');
+            if($loguser['id'] == $user_id){
+                
+                $this->request->getSession()->write('Auth.User', $user);
+            }
+            return $this->redirect(['action' => 'index']);
+        }
+        $this->Flash->error(__('The employe could not be added. Please, try again.'));
+    }
    
 }

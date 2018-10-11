@@ -84,6 +84,7 @@ class AppController extends Controller
         
         $action = $this->request->getParam('action');
         if (isset($user['role']) && $user['role'] === 'admin') {
+            
             return true;
         }
         if (isset($user['role']) && $user['role'] === 'toBeEmploye') {

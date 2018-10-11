@@ -1879,3 +1879,531 @@ Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
 
 
 
+2018-10-11 13:21:44 Notice: Notice (8): Undefined variable: action in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\src\Controller\EmployesController.php, line 127]
+Request URL: /employes/add
+Referer URL: http://localhost/cakeTp1%20-%20V3/employes
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+App\Controller\EmployesController::isAuthorized() - APP/Controller\EmployesController.php, line 127
+Cake\Auth\ControllerAuthorize::authorize() - CORE\src\Auth\ControllerAuthorize.php, line 93
+Cake\Controller\Component\AuthComponent::isAuthorized() - CORE\src\Controller\Component\AuthComponent.php, line 540
+Cake\Controller\Component\AuthComponent::authCheck() - CORE\src\Controller\Component\AuthComponent.php, line 326
+Cake\Controller\Component\AuthComponent::startup() - CORE\src\Controller\Component\AuthComponent.php, line 276
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 353
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 330
+Cake\Controller\Controller::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 114
+Cake\Controller\Controller::startupProcess() - CORE\src\Controller\Controller.php, line 662
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 115
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE\src\Http\Middleware\CsrfProtectionMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-10-11 13:22:09 Notice: Notice (8): Undefined variable: action in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\src\Controller\EmployesController.php, line 126]
+Request URL: /employes/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+App\Controller\EmployesController::isAuthorized() - APP/Controller\EmployesController.php, line 126
+Cake\Auth\ControllerAuthorize::authorize() - CORE\src\Auth\ControllerAuthorize.php, line 93
+Cake\Controller\Component\AuthComponent::isAuthorized() - CORE\src\Controller\Component\AuthComponent.php, line 540
+Cake\Controller\Component\AuthComponent::authCheck() - CORE\src\Controller\Component\AuthComponent.php, line 326
+Cake\Controller\Component\AuthComponent::startup() - CORE\src\Controller\Component\AuthComponent.php, line 276
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 353
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 330
+Cake\Controller\Controller::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 114
+Cake\Controller\Controller::startupProcess() - CORE\src\Controller\Controller.php, line 662
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 115
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE\src\Http\Middleware\CsrfProtectionMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-10-11 13:22:09 Notice: Notice (8): Undefined variable: action in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\src\Controller\EmployesController.php, line 128]
+Request URL: /employes/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+App\Controller\EmployesController::isAuthorized() - APP/Controller\EmployesController.php, line 128
+Cake\Auth\ControllerAuthorize::authorize() - CORE\src\Auth\ControllerAuthorize.php, line 93
+Cake\Controller\Component\AuthComponent::isAuthorized() - CORE\src\Controller\Component\AuthComponent.php, line 540
+Cake\Controller\Component\AuthComponent::authCheck() - CORE\src\Controller\Component\AuthComponent.php, line 326
+Cake\Controller\Component\AuthComponent::startup() - CORE\src\Controller\Component\AuthComponent.php, line 276
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 353
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 330
+Cake\Controller\Controller::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 114
+Cake\Controller\Controller::startupProcess() - CORE\src\Controller\Controller.php, line 662
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 115
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE\src\Http\Middleware\CsrfProtectionMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-10-11 13:38:26 Notice: Notice (8): Undefined variable: addresses in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\src\Template\Tags\add.ctp, line 21]
+Request URL: /tags/add
+Referer URL: http://localhost/cakeTp1%20-%20V3/tags
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+include - APP/Template\Tags\add.ctp, line 21
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::render() - CORE\src\View\View.php, line 803
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 777
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE\src\Http\Middleware\CsrfProtectionMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-10-11 13:39:10 Notice: Notice (8): Undefined variable: addresses in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\src\Template\Tags\add.ctp, line 21]
+Request URL: /tags/add
+Referer URL: http://localhost/cakeTp1%20-%20V3/tags
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+include - APP/Template\Tags\add.ctp, line 21
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::render() - CORE\src\View\View.php, line 803
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 777
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE\src\Http\Middleware\CsrfProtectionMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-10-11 13:41:02 Notice: Notice (8): Undefined variable: address in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\src\Template\Tags\add.ctp, line 21]
+Request URL: /tags/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+include - APP/Template\Tags\add.ctp, line 21
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::render() - CORE\src\View\View.php, line 803
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 777
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE\src\Http\Middleware\CsrfProtectionMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-10-11 14:44:36 Notice: Notice (8): Array to string conversion in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\src\Template\Abouts\index.ctp, line 25]
+Request URL: /abouts
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+include - APP/Template\Abouts\index.ctp, line 25
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::render() - CORE\src\View\View.php, line 803
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 777
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE\src\Http\Middleware\CsrfProtectionMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-10-11 14:44:36 Notice: Notice (8): Array to string conversion in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\src\Template\Abouts\index.ctp, line 26]
+Request URL: /abouts
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+include - APP/Template\Abouts\index.ctp, line 26
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::render() - CORE\src\View\View.php, line 803
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 777
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE\src\Http\Middleware\CsrfProtectionMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-10-11 14:44:51 Notice: Notice (8): Array to string conversion in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\src\Template\Abouts\index.ctp, line 25]
+Request URL: /abouts
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+include - APP/Template\Abouts\index.ctp, line 25
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::render() - CORE\src\View\View.php, line 803
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 777
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE\src\Http\Middleware\CsrfProtectionMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-10-11 14:44:51 Notice: Notice (8): Array to string conversion in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\src\Template\Abouts\index.ctp, line 26]
+Request URL: /abouts
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+include - APP/Template\Abouts\index.ctp, line 26
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::render() - CORE\src\View\View.php, line 803
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 777
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE\src\Http\Middleware\CsrfProtectionMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-10-11 14:45:44 Notice: Notice (8): Array to string conversion in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\src\Template\Abouts\index.ctp, line 25]
+Request URL: /abouts
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+include - APP/Template\Abouts\index.ctp, line 25
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::render() - CORE\src\View\View.php, line 803
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 777
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE\src\Http\Middleware\CsrfProtectionMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-10-11 14:45:44 Notice: Notice (8): Array to string conversion in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\src\Template\Abouts\index.ctp, line 26]
+Request URL: /abouts
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+include - APP/Template\Abouts\index.ctp, line 26
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::render() - CORE\src\View\View.php, line 803
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 777
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE\src\Http\Middleware\CsrfProtectionMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-10-11 14:49:24 Notice: Notice (8): Use of undefined constant bdOriginale - assumed 'bdOriginale' in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\src\Template\Abouts\index.ctp, line 32]
+Request URL: /abouts
+Referer URL: http://localhost/cakeTp1%20-%20V3/abouts
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+include - APP/Template\Abouts\index.ctp, line 32
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::render() - CORE\src\View\View.php, line 803
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 777
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE\src\Http\Middleware\CsrfProtectionMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-10-11 14:49:24 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\src\Template\Abouts\index.ctp, line 35]
+Request URL: /abouts
+Referer URL: http://localhost/cakeTp1%20-%20V3/abouts
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+include - APP/Template\Abouts\index.ctp, line 35
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::render() - CORE\src\View\View.php, line 803
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 777
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE\src\Http\Middleware\CsrfProtectionMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-10-11 14:49:24 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\src\Template\Abouts\index.ctp, line 35]
+Request URL: /abouts
+Referer URL: http://localhost/cakeTp1%20-%20V3/abouts
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+include - APP/Template\Abouts\index.ctp, line 35
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::render() - CORE\src\View\View.php, line 803
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 777
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE\src\Http\Middleware\CsrfProtectionMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-10-11 14:49:52 Notice: Notice (8): Undefined variable: file in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\src\Template\Abouts\index.ctp, line 35]
+Request URL: /abouts
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+include - APP/Template\Abouts\index.ctp, line 35
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::render() - CORE\src\View\View.php, line 803
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 777
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE\src\Http\Middleware\CsrfProtectionMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-10-11 14:49:52 Notice: Notice (8): Trying to get property of non-object in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\src\Template\Abouts\index.ctp, line 35]
+Request URL: /abouts
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+include - APP/Template\Abouts\index.ctp, line 35
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::render() - CORE\src\View\View.php, line 803
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 777
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE\src\Http\Middleware\CsrfProtectionMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
