@@ -395,3 +395,61 @@ Stack Trace:
 #24 {main}
 
 
+2018-10-12 14:19:58 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`cakebanque`.`addresses_files`, CONSTRAINT `addresses_files_ibfk_2` FOREIGN KEY (`address_id`) REFERENCES `addresses` (`id`)) in C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 304
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(304): PDOStatement->execute(Array)
+#1 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php(193): Phinx\Db\Adapter\PdoAdapter->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#2 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\TimedOutputAdapter.php(127): Phinx\Db\Adapter\AdapterWrapper->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#3 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php(193): Phinx\Db\Adapter\TimedOutputAdapter->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#4 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(597): Phinx\Db\Adapter\AdapterWrapper->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#5 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(569): Phinx\Db\Table->saveData()
+#6 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(627): Phinx\Db\Table->update()
+#7 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\config\Seeds\AddressesFilesSeed.php(25): Phinx\Db\Table->save()
+#8 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(158): AddressesFilesSeed->run()
+#9 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(416): Phinx\Migration\Manager\Environment->executeSeed(Object(AddressesFilesSeed))
+#10 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(553): Phinx\Migration\Manager->executeSeed('default', Object(AddressesFilesSeed))
+#11 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(111): Phinx\Migration\Manager->seed('default')
+#12 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\symfony\console\Command\Command.php(251): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\symfony\console\Application.php(886): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\symfony\console\Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\symfony\console\Application.php(145): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(108): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Console\Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#20 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(164): Cake\Console\Shell->runCommand(Array, true, Array)
+#21 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#22 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#23 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#24 {main}
+
+
+2018-10-12 15:01:13 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`cakebanque`.`addresses_files`, CONSTRAINT `addresses_files_ibfk_2` FOREIGN KEY (`address_id`) REFERENCES `addresses` (`id`)) in C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 304
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(304): PDOStatement->execute(Array)
+#1 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php(193): Phinx\Db\Adapter\PdoAdapter->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#2 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\TimedOutputAdapter.php(127): Phinx\Db\Adapter\AdapterWrapper->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#3 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php(193): Phinx\Db\Adapter\TimedOutputAdapter->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#4 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(597): Phinx\Db\Adapter\AdapterWrapper->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#5 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(569): Phinx\Db\Table->saveData()
+#6 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(627): Phinx\Db\Table->update()
+#7 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\config\Seeds\AddressesFilesSeed.php(25): Phinx\Db\Table->save()
+#8 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(158): AddressesFilesSeed->run()
+#9 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(416): Phinx\Migration\Manager\Environment->executeSeed(Object(AddressesFilesSeed))
+#10 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(553): Phinx\Migration\Manager->executeSeed('default', Object(AddressesFilesSeed))
+#11 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(111): Phinx\Migration\Manager->seed('default')
+#12 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\symfony\console\Command\Command.php(251): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\symfony\console\Application.php(886): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\symfony\console\Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\symfony\console\Application.php(145): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(108): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Console\Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#20 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(164): Cake\Console\Shell->runCommand(Array, true, Array)
+#21 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#22 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#23 C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#24 {main}
+
+

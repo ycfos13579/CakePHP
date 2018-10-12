@@ -67,6 +67,46 @@ class UsersSeed extends AbstractSeed
                 'modified' => '10',
                 'role' => 'toBeEmploye',
             ],
+            [
+                'id' => '29',
+                'email' => 'vlad@mich.com',
+                'password' => '$2y$10$yzKNptrioGdBjYuoPFNX9e8xKk4f8IUn7VoZq9lM9aNBNOq6Bj5Nm',
+                'created' => '10',
+                'modified' => '10',
+                'role' => 'toBeEmploye',
+            ],
+            [
+                'id' => '30',
+                'email' => 'bar@bar.fr',
+                'password' => '$2y$10$za7qCiHNtVU9g2pCK0BdlO6WLnmV8KSs4WiGwnFrJjt4XY06eXBda',
+                'created' => '10',
+                'modified' => '10',
+                'role' => 'toBeEmploye',
+            ],
+            [
+                'id' => '31',
+                'email' => 'bar@far.fr',
+                'password' => '$2y$10$9qbf3VYdaIRzAtuuCukT5.iiBF/X5thMt1LLSOP4MTIKbSRBq6YTG',
+                'created' => '10',
+                'modified' => '10',
+                'role' => 'toBeCustomer',
+            ],
+            [
+                'id' => '32',
+                'email' => 'mich@outlook.fr',
+                'password' => '$2y$10$z4wZnJjFdUoynbGvZJyvtuz7DZs0/TVFeh6AK5tU2gXKYQ06l2Z4G',
+                'created' => '10',
+                'modified' => '10',
+                'role' => 'toBeCustomer',
+            ],
+            [
+                'id' => '33',
+                'email' => 'pavel@hotmail.com',
+                'password' => '$2y$10$Lp0IoQdZ8lDILbGi41lQF.9G6RDqS3rCF/oBBQ47cp7HhaJLM5FeK',
+                'created' => '10',
+                'modified' => '10',
+                'role' => 'employe',
+            ],
         ];
 
         $table = $this->table('users');

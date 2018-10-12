@@ -37,6 +37,12 @@ class TagsSeed extends AbstractSeed
                 'created' => '2018-10-07 17:18:40',
                 'modified' => '2018-10-07 17:18:40',
             ],
+            [
+                'id' => '4',
+                'title' => 'deuxième tag',
+                'created' => '2018-10-11 13:39:03',
+                'modified' => '2018-10-11 13:39:03',
+            ],
         ];
 
         $table = $this->table('tags');

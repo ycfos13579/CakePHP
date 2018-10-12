@@ -2290,3 +2290,1187 @@ Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
 
 
 
+2018-10-12 14:10:01 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\config\routes.php, line: 72
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:10:01 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:10:01 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:10:01 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:10:01 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:10:56 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\config\routes.php, line: 72
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:10:56 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:10:56 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:10:56 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:10:56 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:11:49 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\config\routes.php, line: 72
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:11:49 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:11:49 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:11:49 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:11:49 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:12:32 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\config\routes.php, line: 72
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:12:32 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:12:32 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:12:32 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:12:32 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:12:47 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\config\routes.php, line: 72
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:12:47 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:12:47 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:12:47 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:12:47 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:13:51 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\config\routes.php, line: 72
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:13:51 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:13:51 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:13:51 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:13:51 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:15:24 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\config\routes.php, line: 72
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:15:24 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:15:24 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:15:24 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:15:24 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:15:44 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\config\routes.php, line: 72
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:15:44 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:15:44 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:15:44 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:15:44 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:16:12 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\config\routes.php, line: 72
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:16:12 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:16:12 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:16:12 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:16:12 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:16:23 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\config\routes.php, line: 72
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:16:24 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:16:24 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:16:24 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:16:24 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:16:35 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\config\routes.php, line: 72
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:16:35 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:16:35 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:16:35 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:16:35 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:16:47 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\config\routes.php, line: 72
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:16:47 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:16:47 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:16:47 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:16:47 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:18:18 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\config\routes.php, line: 72
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:18:18 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:18:18 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:18:18 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:18:18 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:18:42 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\config\routes.php, line: 72
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:18:42 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:18:42 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:18:42 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:18:42 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:19:58 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\config\routes.php, line: 72
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:19:58 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:19:58 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:19:58 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 14:19:58 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 15:01:13 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\config\routes.php, line: 72
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 15:01:13 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 15:01:13 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 15:01:13 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-12 15:01:13 Notice: Deprecated (16384): You no longer need to call `Plugin::routes()` after upgrading to use Http\Server. See https://book.cakephp.org/3.0/en/development/application.html#adding-the-new-http-stack-to-an-existing-application for upgrade information. - C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\Plugin.php, line: 310
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\cakeTp1 - V3\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 306
+Cake\Core\Plugin::routes() - CORE\src\Core\Plugin.php, line 310
+require - ROOT\config\routes.php, line 72
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Console\CommandRunner::loadRoutes() - CORE\src\Console\CommandRunner.php, line 377
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
+[main] - ROOT\bin\cake.php, line 12
+
+
+

@@ -27,6 +27,14 @@ class FilesSeed extends AbstractSeed
                 'modified' => '2018-10-08 23:46:13',
                 'status' => '1',
             ],
+            [
+                'id' => '2',
+                'name' => 'youc.png',
+                'path' => 'Files/',
+                'created' => '2018-10-11 13:35:01',
+                'modified' => '2018-10-11 13:35:01',
+                'status' => '1',
+            ],
         ];
 
         $table = $this->table('files');
