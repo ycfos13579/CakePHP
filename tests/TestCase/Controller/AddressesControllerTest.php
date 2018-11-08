@@ -16,18 +16,14 @@ class AddressesControllerTest extends IntegrationTestCase
      * @var array
      */
     public $fixtures = [
-        'app.addresses'
+        'app.addresses',
+        'app.users',
+        'app.customers',
+        'app.files',
+        'app.tags',
+        'app.addresses_files',
+        'app.addresses_tags'
     ];
-
-    /**
-     * Test initialize method
-     *
-     * @return void
-     */
-    public function testInitialize()
-    {
-        $this->markTestIncomplete('Not implemented yet.');
-    }
 
     /**
      * Test index method

@@ -1,93 +1,123 @@
 <?php
-
-
 namespace App\Controller;
 
 use App\Controller\AppController;
 
-
+/**
+ * Addresses Controller
+ *
+ * @property \App\Model\Table\AddressesTable $Addresses
+ *
+ * @method \App\Model\Entity\Address[]|\Cake\Datasource\ResultSetInterface paginate($object = null, array $settings = [])
+ */
 class AddressesController extends AppController
 {
+
     public function initialize() {
         parent::initialize();
         $this->Auth->allow(['tags']);
     }
-    
-    public function isAuthorized($user)    {
-        parent::isAuthorized($user);   
+
+    public function isAuthorized($user) {
         $action = $this->request->getParam('action');
-        if (isset($user['role']) && $user['role'] === 'admin') {
-            if(in_array($action, ['add', 'view', 'edit', 'delete'])){
-                return true;
-            }
-            return true;
-        }
-        if (isset($user['role']) && $user['role'] === 'toBeEmploye') {
-            if(in_array($action, ['add', 'view', 'edit'])){
-                return true;
-            }
-            return true;
-        }
-        /*$action = $this->request->getParam('action');
         // The add and tags actions are always allowed to logged in users.
         if (in_array($action, ['add', 'tags'])) {
             return true;
         }
 
-        
+        // All other actions require a slug.
         $id = $this->request->getParam('pass.0');
         if (!$id) {
             return false;
         }
 
-        // Check that the address belongs to the current user.
+        // Check that the article belongs to the current user.
         $address = $this->Addresses->findById($id)->first();
 
-        return $address->user_id === $user['id'];*/
+        return $address->user_id === $user['id'];
     }
- 
+    /**
+     * Index method
+     *
+     * @return \Cake\Http\Response|void
+     */
     public function index()
     {
-         $this->paginate = [
+        $this->paginate = [
             'contain' => ['Users']
         ];
         $addresses = $this->paginate($this->Addresses);
 
         $this->set(compact('addresses'));
     }
-    
+
+    /**
+     * View method
+     *
+     * @param string|null $id Address id.
+     * @return \Cake\Http\Response|void
+     * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
+     */
     public function view($id = null)
     {
         $address = $this->Addresses->get($id, [
-            'contain' => ['Users', 'Tags', 'Customers', 'files']
+            'contain' => ['Users', 'Files', 'Tags', 'Customers', 'Cities']
         ]);
 
         $this->set('address', $address);
     }
-    public function add(){
+
+    /**
+     * Add method
+     *
+     * @return \Cake\Http\Response|null Redirects on successful add, renders view otherwise.
+     */
+    public function add()
+    {
         $address = $this->Addresses->newEntity();
+        
         if ($this->request->is('post')) {
             $address = $this->Addresses->patchEntity($address, $this->request->getData());
-
-            // Hardcoding the user_id is temporary, and will be removed later
-            // when we build authentication out.
+            
             $address->user_id = $this->Auth->user('id');
-
             if ($this->Addresses->save($address)) {
-                $this->Flash->success(__('Your address has been saved.'));
+                $this->Flash->success(__('The address has been saved.'));
+
                 return $this->redirect(['action' => 'index']);
             }
-            
             $this->Flash->error(__('The address could not be saved. Please, try again.'));
         }
+        // Bâtir la liste des Provinces  
+        $this->loadModel('Provinces');
+        $provinces = $this->Provinces->find('list', ['limit' => 200]);
+
+        // Extraire le id de la première province
+        $provinces = $provinces->toArray();
+        reset($provinces);
+        $province_id = key($provinces);
+
+        // Bâtir la liste des villes reliées à cette province
+        $cities = $this->Addresses->cities->find('list', [
+            'conditions' => ['Cities.province_id' => $province_id],
+        ]);
+
+        $users = $this->Addresses->Users->find('list', ['limit' => 200]);
+        $files = $this->Addresses->Files->find('list', ['limit' => 200]);
         $tags = $this->Addresses->Tags->find('list', ['limit' => 200]);
-        $files = $this->Addresses->files->find('list', ['limit' => 200]);
-        $this->set(compact('address', 'users', 'tags', 'files'));
+        $this->set(compact('address', 'users', 'files', 'tags', 'cities', 'provinces'));
     }
-    
-    public function edit($id = null) {
+
+    /**
+     * Edit method
+     *
+     * @param string|null $id Address id.
+     * @return \Cake\Http\Response|null Redirects on successful edit, renders view otherwise.
+     * @throws \Cake\Network\Exception\NotFoundException When record not found.
+     */
+    public function edit($id = null)
+    {
         $address = $this->Addresses->get($id, [
-            'contain' => ['Tags', 'files']
+            'contain' => ['Files', 'Tags']
         ]);
         if ($this->request->is(['patch', 'post', 'put'])) {
             $address = $this->Addresses->patchEntity($address, $this->request->getData());
@@ -98,13 +128,21 @@ class AddressesController extends AppController
             }
             $this->Flash->error(__('The address could not be saved. Please, try again.'));
         }
-        
+       //$users = $this->Addresses->Users->find('list', ['limit' => 200]);
+        $files = $this->Addresses->Files->find('list', ['limit' => 200]);
         $tags = $this->Addresses->Tags->find('list', ['limit' => 200]);
-        $files = $this->Addresses->files->find('list', ['limit' => 200]);
-        $this->set(compact('address', 'users', 'tags', 'files'));
+        $this->set(compact('address', 'users', 'files', 'tags'));
     }
-    
-    public function delete($id = null) {
+
+    /**
+     * Delete method
+     *
+     * @param string|null $id Address id.
+     * @return \Cake\Http\Response|null Redirects to index.
+     * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
+     */
+    public function delete($id = null)
+    {
         $this->request->allowMethod(['post', 'delete']);
         $address = $this->Addresses->get($id);
         if ($this->Addresses->delete($address)) {
@@ -115,16 +153,13 @@ class AddressesController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
-
-    
-    public function tags()
-    {
+    public function tags() {
         // The 'pass' key is provided by CakePHP and contains all
         // the passed URL path segments in the request.
         $tags = $this->request->getParam('pass');
 
-        // Use the AddressesTable to find tagged addresses.
-        $addresss = $this->Addresses->find('tagged', [
+        // Use the ArticlesTable to find tagged articles.
+        $addresses = $this->Addresses->find('tagged', [
             'tags' => $tags
         ]);
 

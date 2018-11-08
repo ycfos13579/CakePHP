@@ -31,6 +31,7 @@ class AddressesFixture extends TestFixture
         '_constraints' => [
             'primary' => ['type' => 'primary', 'columns' => ['id'], 'length' => []],
             'slug' => ['type' => 'unique', 'columns' => ['slug'], 'length' => []],
+            'addresses_ibfk_1' => ['type' => 'foreign', 'columns' => ['user_id'], 'references' => ['users', 'id'], 'update' => 'restrict', 'delete' => 'restrict', 'length' => []],
         ],
         '_options' => [
             'engine' => 'InnoDB',
@@ -54,8 +55,8 @@ class AddressesFixture extends TestFixture
                 'slug' => 'Lorem ipsum dolor sit amet',
                 'body' => 'Lorem ipsum dolor sit amet, aliquet feugiat. Convallis morbi fringilla gravida, phasellus feugiat dapibus velit nunc, pulvinar eget sollicitudin venenatis cum nullam, vivamus ut a sed, mollitia lectus. Nulla vestibulum massa neque ut et, id hendrerit sit, feugiat in taciti enim proin nibh, tempor dignissim, rhoncus duis vestibulum nunc mattis convallis.',
                 'published' => 1,
-                'created' => '2018-09-24 13:57:43',
-                'modified' => '2018-09-24 13:57:43'
+                'created' => '2018-11-08 15:37:58',
+                'modified' => '2018-11-08 15:37:58'
             ],
         ];
         parent::init();

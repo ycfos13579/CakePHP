@@ -24,7 +24,11 @@ class AddressesTableTest extends TestCase
      * @var array
      */
     public $fixtures = [
-        'app.addresses'
+        'app.addresses',
+        'app.users',
+        'app.customers',
+        'app.files',
+        'app.tags'
     ];
 
     /**
@@ -62,21 +66,21 @@ class AddressesTableTest extends TestCase
     }
 
     /**
-     * Test beforeSave method
-     *
-     * @return void
-     */
-    public function testBeforeSave()
-    {
-        $this->markTestIncomplete('Not implemented yet.');
-    }
-
-    /**
      * Test validationDefault method
      *
      * @return void
      */
     public function testValidationDefault()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
+     * Test buildRules method
+     *
+     * @return void
+     */
+    public function testBuildRules()
     {
         $this->markTestIncomplete('Not implemented yet.');
     }
