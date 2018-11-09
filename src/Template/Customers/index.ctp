@@ -28,7 +28,7 @@
         <tbody>
             <?php foreach ($customers as $customer): ?>
             <tr>
-                <td><?= $this->Number->format($customer->id) ?></td>
+               
                 <td><?= $customer->has('address') ? $this->Html->link($customer->address->title, ['controller' => 'Addresses', 'action' => 'view', $customer->address->id]) : '' ?></td>
                 <td><?= h($customer->name) ?></td>
                 <td><?= h($customer->created) ?></td>

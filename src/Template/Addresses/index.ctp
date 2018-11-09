@@ -23,9 +23,11 @@
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>
-                //<th scope="col"><?= $this->Paginator->sort('id') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('user_id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('title') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('province') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('city') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('slug') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('published') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('created') ?></th>
@@ -39,6 +41,8 @@
                 <td><?= $this->Number->format($address->id) ?></td>
                 <td><?= $address->has('user') ? $this->Html->link($address->user->id, ['controller' => 'Users', 'action' => 'view', $address->user->id]) : '' ?></td>
                 <td><?= h($address->title) ?></td>
+                <td><?= $address->has('city_id') ? $this->Html->link($address->city_id->id, ['controller' => 'Cities', 'action' => 'view', $address->city_id->name]) : '' ?></td>
+                <td><?= $address->has('city_id') ? $this->Html->link($address->city_id->id, ['controller' => 'Cities', 'action' => 'view', $address->city_id->name]) : '' ?></td>
                 <td><?= h($address->slug) ?></td>
                 <td><?= $this->Number->format($address->published) ?></td>
                 <td><?= h($address->created) ?></td>

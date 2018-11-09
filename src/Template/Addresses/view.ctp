@@ -33,6 +33,11 @@
             <td><?= h($address->title) ?></td>
         </tr>
         <tr>
+            <th scope="row"><?= __('City') ?></th>
+            <td><?= h($address->City['name']) ?></td>
+            <td><?= $address->has('city_id') ? $this->Html->link($address->city_id->id, ['controller' => 'Cities', 'action' => 'view', $address->city_id->name]) : '' ?></td>
+        </tr>
+        <tr>
             <th scope="row"><?= __('Slug') ?></th>
             <td><?= h($address->slug) ?></td>
         </tr>
