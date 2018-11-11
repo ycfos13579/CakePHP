@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net
 --
 -- Client :  localhost
--- Généré le :  Jeu 11 Octobre 2018 à 16:56
+-- Généré le :  Dim 11 Novembre 2018 à 19:38
 -- Version du serveur :  5.6.37
--- Version de PHP :  7.1.8
+-- Version de PHP :  5.6.31
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -34,15 +34,16 @@ CREATE TABLE IF NOT EXISTS `addresses` (
   `body` text,
   `published` tinyint(4) DEFAULT '0',
   `created` datetime DEFAULT NULL,
-  `modified` datetime DEFAULT NULL
+  `modified` datetime DEFAULT NULL,
+  `province_id` int(11) NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
 
 --
 -- Contenu de la table `addresses`
 --
 
-INSERT INTO `addresses` (`id`, `user_id`, `title`, `slug`, `body`, `published`, `created`, `modified`) VALUES
-(8, 13, '287 rue de limoges', 'nvgn djasldkasdas;ld', 'ad efsdf sef ', 0, '2018-10-08 20:16:50', '2018-10-08 22:58:32');
+INSERT INTO `addresses` (`id`, `user_id`, `title`, `slug`, `body`, `published`, `created`, `modified`, `province_id`) VALUES
+(8, 13, '287 rue de limoges', 'nvgn djasldkasdas;ld', 'ad efsdf sef ', 0, '2018-10-08 20:16:50', '2018-10-08 22:58:32', 0);
 
 -- --------------------------------------------------------
 
@@ -73,6 +74,34 @@ CREATE TABLE IF NOT EXISTS `addresses_tags` (
 
 INSERT INTO `addresses_tags` (`address_id`, `tag_id`) VALUES
 (8, 3);
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `cities`
+--
+
+CREATE TABLE IF NOT EXISTS `cities` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `province_id` int(11) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Contenu de la table `cities`
+--
+
+INSERT INTO `cities` (`id`, `name`, `province_id`) VALUES
+(1, 'Québec', 1),
+(2, 'Montréal', 1),
+(3, 'Laval', 1),
+(4, 'Ottawa', 2),
+(5, 'Toronto', 2),
+(6, 'Vancouver', 3),
+(7, 'Kelowna', 3),
+(8, 'Calgary', 4),
+(9, 'Edmonton', 4),
+(10, 'Longeuil', 1);
 
 -- --------------------------------------------------------
 
@@ -190,6 +219,27 @@ INSERT INTO `phinxlog` (`version`, `migration_name`, `start_time`, `end_time`, `
 -- --------------------------------------------------------
 
 --
+-- Structure de la table `provinces`
+--
+
+CREATE TABLE IF NOT EXISTS `provinces` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Contenu de la table `provinces`
+--
+
+INSERT INTO `provinces` (`id`, `name`) VALUES
+(1, 'Québec'),
+(2, 'Ontario'),
+(3, 'British columbia'),
+(4, 'Alberta');
+
+-- --------------------------------------------------------
+
+--
 -- Structure de la table `tags`
 --
 
@@ -252,7 +302,8 @@ INSERT INTO `users` (`id`, `email`, `password`, `created`, `modified`, `role`) V
 ALTER TABLE `addresses`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `slug` (`slug`),
-  ADD KEY `user_key` (`user_id`) USING BTREE;
+  ADD KEY `user_key` (`user_id`) USING BTREE,
+  ADD KEY `index` (`province_id`);
 
 --
 -- Index pour la table `addresses_files`
@@ -268,6 +319,13 @@ ALTER TABLE `addresses_files`
 ALTER TABLE `addresses_tags`
   ADD PRIMARY KEY (`address_id`,`tag_id`) USING BTREE,
   ADD KEY `tag_key` (`tag_id`) USING BTREE;
+
+--
+-- Index pour la table `cities`
+--
+ALTER TABLE `cities`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `index` (`province_id`);
 
 --
 -- Index pour la table `customers`
@@ -304,6 +362,12 @@ ALTER TABLE `phinxlog`
   ADD PRIMARY KEY (`version`);
 
 --
+-- Index pour la table `provinces`
+--
+ALTER TABLE `provinces`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Index pour la table `tags`
 --
 ALTER TABLE `tags`
@@ -331,6 +395,11 @@ ALTER TABLE `addresses`
 ALTER TABLE `addresses_files`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
+-- AUTO_INCREMENT pour la table `cities`
+--
+ALTER TABLE `cities`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
+--
 -- AUTO_INCREMENT pour la table `customers`
 --
 ALTER TABLE `customers`
@@ -350,6 +419,11 @@ ALTER TABLE `files`
 --
 ALTER TABLE `i18n`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
+--
+-- AUTO_INCREMENT pour la table `provinces`
+--
+ALTER TABLE `provinces`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT pour la table `tags`
 --
@@ -383,6 +457,12 @@ ALTER TABLE `addresses_files`
 ALTER TABLE `addresses_tags`
   ADD CONSTRAINT `addresses_tags_ibfk_1` FOREIGN KEY (`address_id`) REFERENCES `addresses` (`id`),
   ADD CONSTRAINT `addresses_tags_ibfk_2` FOREIGN KEY (`tag_id`) REFERENCES `tags` (`id`);
+
+--
+-- Contraintes pour la table `cities`
+--
+ALTER TABLE `cities`
+  ADD CONSTRAINT `cities_ibfk_1` FOREIGN KEY (`province_id`) REFERENCES `provinces` (`id`);
 
 --
 -- Contraintes pour la table `customers`
