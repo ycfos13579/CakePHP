@@ -59,8 +59,8 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                         </li>
                         <li><?=
                             $this->Html->link('Autocomplete', [
-                                'controller' => 'Cars',
-                                'action' => 'autocompletedemo'
+                                'controller' => 'Cities',
+                                'action' => 'autocompleteCity'
                             ]);
                             ?>
                         </li>

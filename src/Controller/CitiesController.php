@@ -14,12 +14,34 @@ class CitiesController extends AppController
 {
     public function initialize() {
         parent::initialize();
-        $this->Auth->allow(['getByProvince']);
+        $this->Auth->allow(['getByProvince', 'autocompleteCity', 'findCities']);
     }
 
     public function isAuthorized($user) {
         // All actions are allowed to logged in users for subcategories.
         return true;
+    }
+
+    public function findCities() {
+
+        if ($this->request->is('ajax')) {
+
+            $this->autoRender = false;
+            $name = $this->request->query['term'];
+            $results = $this->Cities->find('all', array(
+                'conditions' => array('Cities.name LIKE ' => '%' . $name . '%')
+            ));
+
+            $resultArr = array();
+            foreach ($results as $result) {
+                $resultArr[] = array('label' => $result['name'], 'value' => $result['name']);
+            }
+            echo json_encode($resultArr);
+        }
+    }
+
+    public function autocompleteCity() {
+        
     }
 
     public function getByProvince() {
@@ -45,6 +67,7 @@ class CitiesController extends AppController
         $cities = $this->paginate($this->Cities);
 
         $this->set(compact('cities'));
+        
     }
 
     /**
