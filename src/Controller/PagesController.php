@@ -66,4 +66,10 @@ class PagesController extends AppController
             throw new NotFoundException();
         }
     }
+    public function cakePdfDownload($name = null)
+{
+    Configure::write('CakePdf.download', true);
+    Configure::write('CakePdf.filename', "MyCustomName.pdf");
+
+}
 }

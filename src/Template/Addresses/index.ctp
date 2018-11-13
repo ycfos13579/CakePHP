@@ -50,7 +50,9 @@
                 <td><?= h($address->modified) ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['action' => 'view', $address->id]) ?>
+                    <?= $this->Html->link('(pdf)', ['action' => 'view', $address->id . '.pdf']) ?>
                     <?= $this->Html->link(__('Edit'), ['action' => 'edit', $address->id]) ?>
+
                     <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $address->id], ['confirm' => __('Are you sure you want to delete # {0}?', $address->id)]) ?>
                 </td>
             </tr>

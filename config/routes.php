@@ -24,6 +24,7 @@ use Cake\Routing\Router;
 use Cake\Routing\Route\DashedRoute;
 
 Router::extensions(['json', 'xml']);
+Router::extensions(['pdf']);
 
 /**
  * The default class to use for all routes
@@ -52,6 +53,12 @@ Router::scope('/', function (RouteBuilder $routes) {
       $routes->connect('/email',['controller'=>'Emails','action'=>'index']);
       $routes->fallbacks('DashedRoute');
    });
+
+Router::scope('/', function (RouteBuilder $routes) {
+    $routes->addExtensions(['pdf']);
+    $routes->connect('/', ['controller' => 'Pages', 'action' => 'cakePdfDownload']);
+
+});
 
    Router::prefix('api', function ($routes) {
     $routes->extensions(['json', 'xml']);
