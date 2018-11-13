@@ -52,6 +52,24 @@ class CustomersTableTest extends TestCase
         parent::tearDown();
     }
 
+
+    public function testAdd(){
+
+    }
+    public function testEdit(){
+        
+    }
+    public function testIndex(){
+        
+    }
+    public function testView(){
+        
+    }
+    public function testDelete(){
+        
+    }
+
+
     /**
      * Test initialize method
      *
