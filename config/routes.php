@@ -23,7 +23,7 @@ use Cake\Routing\RouteBuilder;
 use Cake\Routing\Router;
 use Cake\Routing\Route\DashedRoute;
 
-//Router::extensions(['json', 'xml']);
+Router::extensions(['json', 'xml']);
 
 /**
  * The default class to use for all routes
@@ -79,7 +79,7 @@ Router::scope('/', function ($routes) {
     $routes->connect('/', ['controller' => 'Users', 'action' => 'login']);
     //$routes->connect('/login', ['controller' => 'Users', 'action' => 'login', 'login']);
 
-    $routes->connect('/', ['controller' => 'Accounts', 'action' => 'index']);
+    //$routes->connect('/', ['controller' => 'Accounts', 'action' => 'index']);
 
     $routes->connect('/pages/*', ['controller' => 'Users', 'action' => 'login']);
 
