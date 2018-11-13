@@ -23,7 +23,7 @@ use Cake\Routing\RouteBuilder;
 use Cake\Routing\Router;
 use Cake\Routing\Route\DashedRoute;
 
-Router::extensions(['json', 'xml']);
+//Router::extensions(['json', 'xml']);
 
 /**
  * The default class to use for all routes
@@ -52,6 +52,19 @@ Router::scope('/', function (RouteBuilder $routes) {
       $routes->connect('/email',['controller'=>'Emails','action'=>'index']);
       $routes->fallbacks('DashedRoute');
    });
+
+   Router::prefix('api', function ($routes) {
+    $routes->extensions(['json', 'xml']);
+    $routes->resources('Accounts');
+    $routes->resources('Users');
+    Router::connect('/api/users/register', ['controller' => 'Users', 'action' => 'add', 'prefix' => 'api']);
+    $routes->fallbacks('InflectedRoute');
+});
+
+Router::prefix('Admin', function ($routes) {
+    $routes->fallbacks('InflectedRoute');
+});
+   
 Router::scope(
     '/addresses',
     ['controller' => 'Addresses'],
@@ -65,6 +78,8 @@ Router::scope('/', function ($routes) {
    
     $routes->connect('/', ['controller' => 'Users', 'action' => 'login']);
     //$routes->connect('/login', ['controller' => 'Users', 'action' => 'login', 'login']);
+
+    $routes->connect('/', ['controller' => 'Accounts', 'action' => 'index']);
 
     $routes->connect('/pages/*', ['controller' => 'Users', 'action' => 'login']);
 

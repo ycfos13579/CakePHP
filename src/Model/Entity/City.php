@@ -25,6 +25,7 @@ class City extends Entity
     protected $_accessible = [
         'province_id' => true,
         'name' => true,
+        'description' => true,
         'province' => true
     ];
 }

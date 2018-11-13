@@ -14,7 +14,9 @@ class CitiesController extends AppController
 {
     public function initialize() {
         parent::initialize();
+       
         $this->Auth->allow(['getByProvince', 'autocompleteCity', 'findCities']);
+        
     }
 
     public function isAuthorized($user) {

@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net
 --
 -- Client :  localhost
--- Généré le :  Dim 11 Novembre 2018 à 19:38
+-- Généré le :  Mar 13 Novembre 2018 à 02:26
 -- Version du serveur :  5.6.37
--- Version de PHP :  5.6.31
+-- Version de PHP :  7.1.8
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -23,6 +23,27 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Structure de la table `accounts`
+--
+
+CREATE TABLE IF NOT EXISTS `accounts` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `description` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `created` datetime NOT NULL,
+  `modified` datetime NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Contenu de la table `accounts`
+--
+
+INSERT INTO `accounts` (`id`, `name`, `description`, `created`, `modified`) VALUES
+(1, 'Chèque', 'Compte pour utilisation quotidienne', '2018-11-01 00:00:00', '0000-00-00 00:00:00');
+
+-- --------------------------------------------------------
+
+--
 -- Structure de la table `addresses`
 --
 
@@ -35,15 +56,16 @@ CREATE TABLE IF NOT EXISTS `addresses` (
   `published` tinyint(4) DEFAULT '0',
   `created` datetime DEFAULT NULL,
   `modified` datetime DEFAULT NULL,
-  `province_id` int(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+  `city_id` int(11) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
 
 --
 -- Contenu de la table `addresses`
 --
 
-INSERT INTO `addresses` (`id`, `user_id`, `title`, `slug`, `body`, `published`, `created`, `modified`, `province_id`) VALUES
-(8, 13, '287 rue de limoges', 'nvgn djasldkasdas;ld', 'ad efsdf sef ', 0, '2018-10-08 20:16:50', '2018-10-08 22:58:32', 0);
+INSERT INTO `addresses` (`id`, `user_id`, `title`, `slug`, `body`, `published`, `created`, `modified`, `city_id`) VALUES
+(8, 13, '287 rue de limoges', 'nvgn djasldkasdas;ld', 'ad efsdf sef ', 0, '2018-10-08 20:16:50', '2018-11-08 14:25:49', 0),
+(9, 13, '2240 rue workman', 'app', 'Une nouvelle addresse', 0, '2018-11-09 17:24:00', '2018-11-09 17:24:00', 2);
 
 -- --------------------------------------------------------
 
@@ -55,7 +77,14 @@ CREATE TABLE IF NOT EXISTS `addresses_files` (
   `id` int(11) NOT NULL,
   `address_id` int(11) NOT NULL,
   `file_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+--
+-- Contenu de la table `addresses_files`
+--
+
+INSERT INTO `addresses_files` (`id`, `address_id`, `file_id`) VALUES
+(1, 9, 2);
 
 -- --------------------------------------------------------
 
@@ -73,6 +102,7 @@ CREATE TABLE IF NOT EXISTS `addresses_tags` (
 --
 
 INSERT INTO `addresses_tags` (`address_id`, `tag_id`) VALUES
+(9, 1),
 (8, 3);
 
 -- --------------------------------------------------------
@@ -83,25 +113,21 @@ INSERT INTO `addresses_tags` (`address_id`, `tag_id`) VALUES
 
 CREATE TABLE IF NOT EXISTS `cities` (
   `id` int(11) NOT NULL,
-  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `province_id` int(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+  `province_id` int(11) NOT NULL,
+  `name` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `description` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 
 --
 -- Contenu de la table `cities`
 --
 
-INSERT INTO `cities` (`id`, `name`, `province_id`) VALUES
-(1, 'Québec', 1),
-(2, 'Montréal', 1),
-(3, 'Laval', 1),
-(4, 'Ottawa', 2),
-(5, 'Toronto', 2),
-(6, 'Vancouver', 3),
-(7, 'Kelowna', 3),
-(8, 'Calgary', 4),
-(9, 'Edmonton', 4),
-(10, 'Longeuil', 1);
+INSERT INTO `cities` (`id`, `province_id`, `name`, `description`) VALUES
+(2, 3, 'Montréal', ''),
+(3, 3, 'Laval', ''),
+(4, 4, 'Ottawa', ''),
+(5, 4, 'Toronto', ''),
+(6, 3, 'Kanawaki', '');
 
 -- --------------------------------------------------------
 
@@ -116,14 +142,15 @@ CREATE TABLE IF NOT EXISTS `customers` (
   `customer` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `created` datetime NOT NULL,
   `modified` datetime NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 
 --
 -- Contenu de la table `customers`
 --
 
 INSERT INTO `customers` (`id`, `address_id`, `name`, `customer`, `created`, `modified`) VALUES
-(4, 8, 'Oussama Youcef Bokari', '1235fgfdg', '2018-10-11 13:13:35', '2018-10-11 13:13:35');
+(4, 8, 'Oussama Youcef Bokari', '1235fgfdg', '2018-10-11 13:13:35', '2018-10-11 13:13:35'),
+(6, 8, 'michel shrerer', 'travailleur', '2018-10-11 17:09:53', '2018-10-11 17:09:53');
 
 -- --------------------------------------------------------
 
@@ -224,18 +251,16 @@ INSERT INTO `phinxlog` (`version`, `migration_name`, `start_time`, `end_time`, `
 
 CREATE TABLE IF NOT EXISTS `provinces` (
   `id` int(11) NOT NULL,
-  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+  `name` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 
 --
 -- Contenu de la table `provinces`
 --
 
 INSERT INTO `provinces` (`id`, `name`) VALUES
-(1, 'Québec'),
-(2, 'Ontario'),
-(3, 'British columbia'),
-(4, 'Alberta');
+(3, 'Québec'),
+(4, 'Ontario');
 
 -- --------------------------------------------------------
 
@@ -281,20 +306,18 @@ CREATE TABLE IF NOT EXISTS `users` (
 
 INSERT INTO `users` (`id`, `email`, `password`, `created`, `modified`, `role`) VALUES
 (13, 'youcef-pino@hotmail.fr', '$2y$10$fDghZhJLlIihmPgwealg/OUlokg815O1we58xM0d0lxJTRdz3TdA2', 9, 9, 'admin'),
-(19, 'bobeponge@hotmail.com', '$2y$10$kp4q8ymbMI8/3Wha.bPBOOhOtjaEv2rOoDqKRT.MTm.vjcVJSROge', 18, 18, 'toBeCustomer'),
-(20, 'cynt@bidon.com', '$2y$10$ef31Ud4bEAmKSE6bH4cZOuS4pSIYNUqm9pdpTQkt9xR7qRC/tioe6', 18, 18, 'toBeCustomer'),
 (21, 'camarche@gmail.com', '$2y$10$m.UL/Ur2BldPSaC473W.kucYjgbXx9w5.9jSky6csnN8z9BErrjQy', 18, 18, 'toBeCustomer'),
-(26, 'bobeponge@hotmail.dessin', '$2y$10$khjiKWDH9wgC.91mpbtI1uMr0yrcY5UKsJSQ2ZoTYdU.8agB/V3lu', 18, 18, 'toBeEmploye'),
-(28, 'grr@grr.com', '$2y$10$S1GbIEVdTU1u45kGsU9wLOeE/1oDVonl2Q8m87GBhJnuP9lY/WktK', 18, 10, 'toBeEmploye'),
-(29, 'vlad@mich.com', '$2y$10$yzKNptrioGdBjYuoPFNX9e8xKk4f8IUn7VoZq9lM9aNBNOq6Bj5Nm', 10, 10, 'toBeEmploye'),
-(30, 'bar@bar.fr', '$2y$10$za7qCiHNtVU9g2pCK0BdlO6WLnmV8KSs4WiGwnFrJjt4XY06eXBda', 10, 10, 'toBeEmploye'),
-(31, 'bar@far.fr', '$2y$10$9qbf3VYdaIRzAtuuCukT5.iiBF/X5thMt1LLSOP4MTIKbSRBq6YTG', 10, 10, 'toBeCustomer'),
-(32, 'mich@outlook.fr', '$2y$10$z4wZnJjFdUoynbGvZJyvtuz7DZs0/TVFeh6AK5tU2gXKYQ06l2Z4G', 10, 10, 'toBeCustomer'),
 (33, 'pavel@hotmail.com', '$2y$10$Lp0IoQdZ8lDILbGi41lQF.9G6RDqS3rCF/oBBQ47cp7HhaJLM5FeK', 10, 10, 'employe');
 
 --
 -- Index pour les tables exportées
 --
+
+--
+-- Index pour la table `accounts`
+--
+ALTER TABLE `accounts`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Index pour la table `addresses`
@@ -303,7 +326,9 @@ ALTER TABLE `addresses`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `slug` (`slug`),
   ADD KEY `user_key` (`user_id`) USING BTREE,
-  ADD KEY `index` (`province_id`);
+  ADD KEY `city_id` (`city_id`),
+  ADD KEY `city_id_2` (`city_id`),
+  ADD KEY `city_id_3` (`city_id`);
 
 --
 -- Index pour la table `addresses_files`
@@ -325,7 +350,8 @@ ALTER TABLE `addresses_tags`
 --
 ALTER TABLE `cities`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `index` (`province_id`);
+  ADD KEY `province_id` (`province_id`),
+  ADD KEY `province_id_2` (`province_id`);
 
 --
 -- Index pour la table `customers`
@@ -385,25 +411,30 @@ ALTER TABLE `users`
 --
 
 --
+-- AUTO_INCREMENT pour la table `accounts`
+--
+ALTER TABLE `accounts`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+--
 -- AUTO_INCREMENT pour la table `addresses`
 --
 ALTER TABLE `addresses`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=10;
 --
 -- AUTO_INCREMENT pour la table `addresses_files`
 --
 ALTER TABLE `addresses_files`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT pour la table `cities`
 --
 ALTER TABLE `cities`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT pour la table `customers`
 --
 ALTER TABLE `customers`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT pour la table `employes`
 --
