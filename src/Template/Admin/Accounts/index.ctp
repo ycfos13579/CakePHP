@@ -27,9 +27,9 @@ $this->start('tb_actions');
             <td><?= h($account->created) ?></td>
             <td><?= h($account->modified) ?></td>
             <td class="actions">
-                <?= $this->Html->link('', ['action' => 'view', $account->id], ['title' => __('View'), 'class' => 'btn btn-default glyphicon glyphicon-eye-open']) ?>
-                <?= $this->Html->link('', ['action' => 'edit', $account->id], ['title' => __('Edit'), 'class' => 'btn btn-default glyphicon glyphicon-pencil']) ?>
-                <?= $this->Form->postLink('', ['action' => 'delete', $account->id], ['confirm' => __('Are you sure you want to delete # {0}?', $account->id), 'title' => __('Delete'), 'class' => 'btn btn-default glyphicon glyphicon-trash']) ?>
+                <?= $this->Html->link('', ['action' => 'view', $account->id], ['title' => __('View'), 'class' => 'btn btn-default fa fa-eye']) ?>
+                <?= $this->Html->link('', ['action' => 'edit', $account->id], ['title' => __('Edit'), 'class' => 'btn btn-default fa fa-pencil']) ?>
+                <?= $this->Form->postLink('', ['action' => 'delete', $account->id], ['confirm' => __('Are you sure you want to delete # {0}?', $account->id), 'title' => __('Delete'), 'class' => 'btn btn-default fa fa-trash']) ?>
             </td>
         </tr>
         <?php endforeach; ?>

@@ -17,7 +17,7 @@ class AccountsController extends AppController {
             'id', 'name', 'description'
         ]
     ];
-
+/*
     public function isAuthorized($user) {
         $action = $this->request->getParam('action');
         if ($action == 'index') {
@@ -68,5 +68,5 @@ class AccountsController extends AppController {
             ],
             '_serialize' => ['success', 'data']
         ]);
-    }
+    }*/
 }

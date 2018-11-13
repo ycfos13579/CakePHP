@@ -37,12 +37,13 @@
         </thead>
         <tbody>
             <?php foreach ($addresses as $address): ?>
+            <? //debug($address)?>
             <tr>
                 <td><?= $this->Number->format($address->id) ?></td>
                 <td><?= $address->has('user') ? $this->Html->link($address->user->id, ['controller' => 'Users', 'action' => 'view', $address->user->id]) : '' ?></td>
                 <td><?= h($address->title) ?></td>
-                <td><?= $address->has('city_id') ? $this->Html->link($address->city_id->id, ['controller' => 'Cities', 'action' => 'view', $address->city_id->name]) : '' ?></td>
-                <td><?= $address->has('city_id') ? $this->Html->link($address->city_id->id, ['controller' => 'Cities', 'action' => 'view', $address->city_id->name]) : '' ?></td>
+                <td><?= h($address->city->province->name) ?></td>
+                <td><?= h($address->city->name) ?></td>
                 <td><?= h($address->slug) ?></td>
                 <td><?= $this->Number->format($address->published) ?></td>
                 <td><?= h($address->created) ?></td>

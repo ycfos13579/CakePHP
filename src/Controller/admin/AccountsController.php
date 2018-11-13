@@ -28,7 +28,7 @@ class AccountsController extends AppController {
     public function initialize() {
         parent::initialize();
         // Use the Bootstrap layout from the plugin.
-        // $this->viewBuilder()->setLayout('admin');
+        $this->viewBuilder()->setClassName('Admin');
     }
 
     /**

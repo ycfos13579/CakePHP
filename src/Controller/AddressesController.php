@@ -44,7 +44,10 @@ class AddressesController extends AppController
     public function index()
     {
         $this->paginate = [
-            'contain' => ['Users']
+            'contain' => [
+                'Users', 
+                'Cities' => ['Provinces']
+                ]
         ];
         $addresses = $this->paginate($this->Addresses);
 
