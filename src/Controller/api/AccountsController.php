@@ -18,6 +18,19 @@ class AccountsController extends AppController {
         ]
     ];
 
+    public function isAuthorized($user) {
+        $action = $this->request->getParam('action');
+        if ($action == 'index') {
+            if ($user) {
+                if ($user['role']['role'] == 'admin') {
+                    return true;
+                } else if ($user['role']['role'] == 'employe') {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
     public function initialize() {
         //parent::initialize();
         $this->Auth->allow(['add', 'token']);
