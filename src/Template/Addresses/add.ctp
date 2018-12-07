@@ -1,7 +1,7 @@
 <?php
 $urlToLinkedListFilter = $this->Url->build([
-    "controller" => "Cities",
-    "action" => "getByProvince",
+    "controller" => "Provinces",
+    "action" => "getProvinces",
     "_ext" => "json"
         ]);
 echo $this->Html->scriptBlock('var urlToLinkedListFilter = "' . $urlToLinkedListFilter . '";', ['block' => true]);
@@ -29,14 +29,23 @@ echo $this->Html->script('Addresses/add', ['block' => 'scriptBottom']);
         <li><?= $this->Html->link(__('New City'), ['controller' => 'Cities', 'action' => 'add']) ?></li>
     </ul>
 </nav>
-<div class="addresses form large-9 medium-8 columns content">
+<div class="addresses form large-9 medium-8 columns content" ng-app="linkedlists" ng-controller="provincesController">
     <?= $this->Form->create($address) ?>
     <fieldset>
         <legend><?= __('Add Address') ?></legend>
         <?php
-            echo $this->Form->control('province_id', ['options' => $provinces]);
-            echo $this->Form->control('city_id', ['options' => $cities]);
+            //echo $this->Form->control('province_id', ['options' => $provinces]);
+            //echo $this->Form->control('city_id', ['options' => $cities]);
             //echo $this->Form->control('user_id', ['options' => $users]);
+            echo $this->Form->control('province_id', [
+                'ng-model' => 'province', 
+                'ng-options' => 'province.name for province in provinces track by province.id'
+            ]);
+            echo $this->Form->control('city_id', [
+                'ng-disabled' => '!province', 
+                'ng-model' => 'city',
+                'ng-options' => "city.name for city in province.cities track by city.id"
+            ]);
             echo $this->Form->control('title');
             echo $this->Form->control('slug');
             echo $this->Form->control('body');

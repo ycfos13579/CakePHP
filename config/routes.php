@@ -56,7 +56,7 @@ Router::scope('/', function (RouteBuilder $routes) {
 
 Router::scope('/', function (RouteBuilder $routes) {
     $routes->addExtensions(['pdf']);
-    $routes->connect('/', ['controller' => 'Pages', 'action' => 'cakePdfDownload']);
+    //$routes->connect('/', ['controller' => 'Pages', 'action' => 'cakePdfDownload']);
 
 });
 

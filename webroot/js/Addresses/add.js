@@ -1,4 +1,4 @@
-$(document).ready(function () {
+/*$(document).ready(function () {
     // The path to action from CakePHP is in urlToLinkedListFilter 
     $('#province-id').on('change', function () {
         var provinceId = $(this).val();
@@ -23,4 +23,11 @@ $(document).ready(function () {
     });
 });
 
-
+*/
+var app = angular.module('linkedlists', []);
+ app.controller('provincesController', function ($scope, $http) {
+    // l'url vient de add.ctp
+    $http.get(urlToLinkedListFilter).then(function (response) {
+        $scope.provinces = response.data;
+    });
+});
