@@ -6,6 +6,10 @@ use App\Controller\Api\AppController;
 
 class AccountsController extends AppController {
 
+    public function initialize() {
+        parent::initialize();
+        $this->Auth->allow(['index', 'view', 'add', 'edit', 'delete', 'token']);
+    }
     public $paginate = [
         'page' => 1,
         'limit' => 100,
