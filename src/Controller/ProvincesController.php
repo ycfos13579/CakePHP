@@ -104,4 +104,19 @@ class ProvincesController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
+    public function getProvinces() {
+        $this->autoRender = false; // avoid to render view
+            
+        $provinces = $this->Provinces->find('all', [
+            'contain' => ['Cities' => [
+                    'conditions' => ['Cities.name !=' => '']
+                ]
+            ],
+        ]);
+           
+        $provincesJson = json_encode($provinces);
+        $this->response->type('json');
+        $this->response->body($provincesJson);
+
+    }
 }

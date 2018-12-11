@@ -63,12 +63,12 @@ class FilesController extends AppController {
      */
     public function add() {
         $file = $this->Files->newEntity();
-        if ($this->request->is('post')) {
-            if (!empty($this->request->data['name']['name'])) {
-                $fileName = $this->request->data['name']['name'];
-                $uploadPath = 'Files/';
+        if ($this->request->is('post') or $this->request->is('ajax')) {
+            if (!empty($this->request->data['file']['name'])) {
+                $fileName = $this->request->data['file']['name'];
+                $uploadPath = 'Files/add/';
                 $uploadFile = $uploadPath . $fileName;
-                if (move_uploaded_file($this->request->data['name']['tmp_name'], 'img/' . $uploadFile)) {
+                if (move_uploaded_file($this->request->data['file']['tmp_name'], 'img/' . $uploadFile)) {
                     $file = $this->Files->patchEntity($file, $this->request->getData());
                     $file->name = $fileName;
                     $file->path = $uploadPath;

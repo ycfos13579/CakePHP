@@ -1,4 +1,4 @@
-function getAccounts() {
+/*function getAccounts() {
     $.ajax({
         type: 'GET',
         url: urlToRestApi,
@@ -22,8 +22,8 @@ function getAccounts() {
     });
 }
 
-/* Function takes a jquery form
- and converts it to a JSON dictionary */
+ Function takes a jquery form
+ and converts it to a JSON dictionary 
 function convertFormToJSON(form) {
     var array = $(form).serializeArray();
     var json = {};
@@ -35,14 +35,14 @@ function convertFormToJSON(form) {
     return json;
 }
 
-/*
+
  $('#accountAddForm').submit(function (e) {
  e.preventDefault();
  var data = convertFormToJSON($(this));
  alert(data);
  console.log(data);
  });
- */
+ 
 
 function accountAction(type, id) {
     id = (typeof id == "undefined") ? '' : id;
@@ -81,7 +81,7 @@ function accountAction(type, id) {
 }
 
 /*** à déboguer ... ***/
-function editAccount(id) {
+/*function editAccount(id) {
     $.ajax({
         type: 'GET',
         dataType: 'JSON',
@@ -93,4 +93,130 @@ function editAccount(id) {
             $('#editForm').slideDown();
         }
     });
-}
+}*/
+
+var app = angular.module('app',[]);
+ app.controller('AccountsController', ['$scope','AccountService', function ($scope,AccountService) {
+	  
+    $scope.updateAccount = function () {
+        AccountService.updateAccount($scope.account.id, $scope.account.name, $scope.account.description)
+          .then(function success(response){
+              $scope.message = 'Account data updated!';
+              $scope.errorMessage = '';
+              $scope.getAllAccounts();
+          },
+          function error(response){
+              $scope.errorMessage = 'Error updating account!';
+              $scope.message = '';
+          });
+    }
+    
+    $scope.getAccount = function () {
+        var id = $scope.account.id;
+        AccountService.getAccount($scope.account.id)
+          .then(function success(response){
+              $scope.account = response.data.data;
+              $scope.account.id = id;
+              $scope.message='';
+              $scope.errorMessage = '';
+          },
+          function error (response ){
+              $scope.message = '';
+              if (response.status === 404){
+                  $scope.errorMessage = 'Account not found!';
+              }
+              else {
+                  $scope.errorMessage = "Error getting account!";
+              }
+          });
+    }
+    
+    $scope.addAccount = function () {
+        if ($scope.account != null && $scope.account.name) {
+            AccountService.addAccount($scope.account.name,$scope.account.description)
+              .then (function success(response){
+                  $scope.message = 'Account added!';
+                  $scope.errorMessage = '';
+              },
+              function error(response){
+                  $scope.errorMessage = 'Error adding account!';
+                  $scope.message = '';
+            });
+        }
+        else {
+            $scope.errorMessage = 'Please enter a name!';
+            $scope.message = '';
+        }
+    }
+    
+    $scope.deleteAccount = function () {
+        AccountService.deleteAccount($scope.account.id)
+          .then (function success(response){
+              $scope.message = 'Account deleted!';
+              $scope.account = null;
+              $scope.errorMessage='';
+          },
+          function error(response){
+              $scope.errorMessage = 'Error deleting account!';
+              $scope.message='';
+          })
+    }
+    
+    $scope.getAllAccounts = function () {
+        AccountService.getAllAccounts()
+          .then(function success(response){
+              $scope.accounts = response.data.data;
+             // $scope.message='';
+              $scope.errorMessage = '';
+          },
+          function error (response ){
+              $scope.message='';
+              $scope.errorMessage = 'Error getting accounts!';
+          });
+    }
+ }]);
+ app.service('AccountService',['$http', function ($http) {
+	
+    this.getAccount = function getAccount(accountId){
+        return $http({
+          method: 'GET',
+          url: 'api/accounts/'+accountId,
+          headers: { 'X-Requested-With' : 'XMLHttpRequest', 'Accept' : 'application/json'}
+        });
+	}
+	
+    this.addAccount = function addAccount(name, description){
+        return $http({
+          method: 'POST',
+          url: 'api/accounts',
+          data: {name:name, description:description},
+          headers: { 'X-Requested-With' : 'XMLHttpRequest', 'Accept' : 'application/json'}
+        });
+    }
+	
+    this.deleteAccount = function deleteAccount(id){
+        return $http({
+          method: 'DELETE',
+          url: 'api/accounts/'+id,
+          headers: { 'X-Requested-With' : 'XMLHttpRequest', 'Accept' : 'application/json'}
+        })
+    }
+	
+    this.updateAccount = function updateAccount(id,name,description){
+        return $http({
+          method: 'PUT',
+          url: 'api/accounts/'+id,
+          data: {name:name, description:description},
+          headers: { 'X-Requested-With' : 'XMLHttpRequest', 'Accept' : 'application/json'}
+
+        })
+    }
+	
+    this.getAllAccounts = function getAllAccounts(){
+        return $http({
+          method: 'GET',
+          url: 'api/accounts',
+          headers: { 'X-Requested-With' : 'XMLHttpRequest', 'Accept' : 'application/json'}
+        });
+    }
+ }]); 

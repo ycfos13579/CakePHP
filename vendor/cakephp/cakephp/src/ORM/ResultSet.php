@@ -65,7 +65,7 @@ class ResultSet implements ResultSetInterface
     /**
      * Default table instance
      *
-     * @var \Cake\ORM\Table
+     * @var \Cake\ORM\Table|\Cake\Datasource\RepositoryInterface
      */
     protected $_defaultTable;
 
@@ -526,6 +526,13 @@ class ResultSet implements ResultSetInterface
         foreach ($this->_map as $table => $keys) {
             $results[$table] = array_combine($keys, array_intersect_key($row, $keys));
             $presentAliases[$table] = true;
+        }
+
+        // If the default table is not in the results, set
+        // it to an empty array so that any contained
+        // associations hydrate correctly.
+        if (!isset($results[$defaultAlias])) {
+            $results[$defaultAlias] = [];
         }
 
         unset($presentAliases[$defaultAlias]);
