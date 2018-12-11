@@ -4,6 +4,16 @@
  * @var \App\Model\Entity\File[]|\Cake\Collection\CollectionInterface $files
  */
 ?>
+<?php
+$urlRedirectToIndex = $this->Url->build([
+    "controller" => "Files",
+    "action" => "index"
+        ]);
+echo $this->Html->scriptBlock('var urlRedirectToIndex = "' . $urlRedirectToIndex . '";', ['block' => true]);
+echo $this->Html->css('dropzone/dropzone.min');
+echo $this->Html->script('dropzone/dropzone', ['block' => 'scriptLibraries']);
+echo $this->Html->script('dropzone/RedirectToIndex', ['block' => 'scriptBottom']);
+?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
@@ -12,7 +22,23 @@
 </nav>
 <div class="files index large-9 medium-8 columns content">
     <h3><?= __('Files') ?></h3>
-    <table cellpadding="0" cellspacing="0">
+
+    <?php
+    echo $this->Form->create('image', [
+        'url' => ['controller' => 'Files',
+            'action' => 'add'
+        ],
+        'method' => 'post',
+        'id' => 'my-awesome-dropzone',
+        'class' => 'dropzone',
+        'type' => 'file',
+        'autocomplete' => 'off'
+    ]);
+    ?>
+    <div class="image_upload_div">
+        <div class="dz-message" data-dz-message><h5>(<?= __('Drop files here to upload') ?>)</h5></div>
+        <table cellpadding="0" cellspacing="0">
+
         <thead>
             <tr>
                 
