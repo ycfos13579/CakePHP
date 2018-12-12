@@ -205,15 +205,8 @@ var app = angular.module('app',[]);
 	
     this.updateAccount = function updateAccount(id,name,description){
         return $http({
-<<<<<<< HEAD
           method: 'PUT',
-=======
-<<<<<<< HEAD
-          method: 'PUT',
-=======
-          method: 'PATCH',
->>>>>>> 995670ecc38c602cf66b8f70cbc1cb5cc5668ba0
->>>>>>> aadb0afed0db7c09f0cd0b28291fc9ec352f0035
+
           url: 'api/accounts/'+id,
           data: {name:name, description:description},
           headers: { 'X-Requested-With' : 'XMLHttpRequest', 'Accept' : 'application/json'}

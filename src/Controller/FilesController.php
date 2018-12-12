@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use Cake\Event\Event;
 
 /**
  * Files Controller
@@ -12,6 +13,11 @@ use App\Controller\AppController;
  * @method \App\Model\Entity\File[]|\Cake\Datasource\ResultSetInterface paginate($object = null, array $settings = [])
  */
 class FilesController extends AppController {
+
+    public function beforeFilter(Event $event)
+    {
+        $this->getEventManager()->off($this->Csrf);
+    }
 
     public function isAuthorized($user) {
         parent::isAuthorized($user);
@@ -65,13 +71,17 @@ class FilesController extends AppController {
         $file = $this->Files->newEntity();
         if ($this->request->is('post') or $this->request->is('ajax')) {
             if (!empty($this->request->data['file']['name'])) {
+
                 $fileName = $this->request->data['file']['name'];
-                $uploadPath = 'Files/add/';
+                $uploadPath = 'files/';
                 $uploadFile = $uploadPath . $fileName;
+                //debug($uploadPath);
+                 //   die();
                 if (move_uploaded_file($this->request->data['file']['tmp_name'], 'img/' . $uploadFile)) {
                     $file = $this->Files->patchEntity($file, $this->request->getData());
                     $file->name = $fileName;
                     $file->path = $uploadPath;
+                    $file->status = 1;
                     if ($this->Files->save($file)) {
                         $this->Flash->success(__('File has been uploaded and inserted successfully.'));
                     } else {
@@ -85,6 +95,7 @@ class FilesController extends AppController {
             }
         }
         $this->set(compact('file'));
+        $this->set('_serialize', ['file']);
     }
 
     /**
