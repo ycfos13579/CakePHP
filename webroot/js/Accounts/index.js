@@ -94,7 +94,6 @@ function accountAction(type, id) {
         }
     });
 }*/
-
 var app = angular.module('app',[]);
  app.controller('AccountsController', ['$scope','AccountService', function ($scope,AccountService) {
 	  
@@ -106,6 +105,8 @@ var app = angular.module('app',[]);
               $scope.getAllAccounts();
           },
           function error(response){
+              console.log(response);
+              
               $scope.errorMessage = 'Error updating account!';
               $scope.message = '';
           });
@@ -204,15 +205,11 @@ var app = angular.module('app',[]);
 	
     this.updateAccount = function updateAccount(id,name,description){
         return $http({
-<<<<<<< HEAD
           method: 'PUT',
-=======
-          method: 'PATCH',
->>>>>>> 995670ecc38c602cf66b8f70cbc1cb5cc5668ba0
+
           url: 'api/accounts/'+id,
           data: {name:name, description:description},
           headers: { 'X-Requested-With' : 'XMLHttpRequest', 'Accept' : 'application/json'}
-
         })
     }
 	
