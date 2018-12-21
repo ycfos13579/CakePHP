@@ -23,6 +23,7 @@
                 <th scope="col"><?= $this->Paginator->sort('modified') ?></th>
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
             </tr>
+            
         </thead>
         <tbody>
             <?php foreach ($users as $user): ?>

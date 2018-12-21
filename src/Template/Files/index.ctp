@@ -42,7 +42,7 @@ echo $this->Html->script('dropzone/RedirectIndex', ['block' => 'scriptBottom']);
 
         <thead>
             <tr>
-                
+            <th scope="col"><?= $this->Paginator->sort('id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('name') ?></th>
                 <th scope="col"><?= __('Preview') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('created') ?></th>
