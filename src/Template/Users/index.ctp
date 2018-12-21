@@ -11,6 +11,7 @@
         <li><?= $this->Html->link(__('List Addresses'), ['controller' => 'Addresses', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Address'), ['controller' => 'Addresses', 'action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Accounts'), ['controller' => 'Accounts', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('List files'), ['controller' => 'Files', 'action' => 'index']) ?></li>
     </ul>
 </nav>
 <div class="users index large-9 medium-8 columns content">

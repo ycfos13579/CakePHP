@@ -8,3 +8,6 @@
 2018-12-21 16:59:47 Debug: duration=0 rows=0 BEGIN
 2018-12-21 16:59:47 Debug: duration=6 rows=1 INSERT INTO files (name, path, created, modified, status) VALUES ('singe.jpg', 'files/', '2018-12-21 16:59:47', '2018-12-21 16:59:47', 1)
 2018-12-21 16:59:47 Debug: duration=0 rows=0 COMMIT
+2018-12-21 17:50:22 Debug: duration=2 rows=2 SELECT Provinces.id AS "Provinces__id", Provinces.name AS "Provinces__name", Provinces.TRIAL732 AS "Provinces__TRIAL732" FROM provinces Provinces
+2018-12-21 17:50:22 Debug: duration=0 rows=6 SELECT Cities.id AS "Cities__id", Cities.province_id AS "Cities__province_id", Cities.name AS "Cities__name", Cities.description AS "Cities__description", Cities.TRIAL725 AS "Cities__TRIAL725" FROM cities Cities WHERE (Cities.name != '' AND Cities.province_id in (3,4))
+2018-12-21 17:56:27 Debug: duration=2 rows=1 SELECT Accounts.id AS "Accounts__id", Accounts.name AS "Accounts__name", Accounts.description AS "Accounts__description", Accounts.created AS "Accounts__created", Accounts.modified AS "Accounts__modified", Accounts.TRIAL722 AS "Accounts__TRIAL722" FROM accounts Accounts WHERE Accounts.id = 1 LIMIT 1
